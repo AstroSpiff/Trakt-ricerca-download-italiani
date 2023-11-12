@@ -457,38 +457,43 @@ class LB {
   }
 }
 
-function handleResolutionChange(selectedCb, otherCbs) {
-    if (!selectedCb.disabled) {
-        selectedCb.active = !selectedCb.active;
-        selectedCb.setStyles();
-        if (selectedCb.active) {
-            otherCbs.forEach(cb => {
-                if (cb.active) {
-                    cb.active = false;
-                    cb.setStyles();
+class ResolutionButton {
+    constructor(id) {
+        this.button = document.getElementById(id);
+        this.isSelected = false;
+
+        // Aggiungi il listener per il click
+        this.button.addEventListener('click', () => {
+            this.toggleSelection();
+            resolutionButtons.forEach(btn => {
+                if (btn !== this && btn.isSelected) {
+                    btn.deselect();
                 }
             });
-        }
-        updater();
+        });
+    }
+
+    toggleSelection() {
+        this.isSelected = !this.isSelected;
+        this.updateStyle();
+    }
+
+    deselect() {
+        this.isSelected = false;
+        this.updateStyle();
+    }
+
+    updateStyle() {
+        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
     }
 }
 
-// Aggiungi i gestori di eventi per hdCB (720p)
-hdCB.block.addEventListener("click", () => handleResolutionChange(hdCB, [fhdCB, uhdCB]));
-hdCB.block.addEventListener("keydown", (e) => {
-    if (e.key == "Enter") handleResolutionChange(hdCB, [fhdCB, uhdCB]);
-});
-
-// Ripeti per fhdCB (1080p) e uhdCB (2160p)
-fhdCB.block.addEventListener("click", () => handleResolutionChange(fhdCB, [hdCB, uhdCB]));
-fhdCB.block.addEventListener("keydown", (e) => {
-    if (e.key == "Enter") handleResolutionChange(fhdCB, [hdCB, uhdCB]);
-});
-
-uhdCB.block.addEventListener("click", () => handleResolutionChange(uhdCB, [hdCB, fhdCB]));
-uhdCB.block.addEventListener("keydown", (e) => {
-    if (e.key == "Enter") handleResolutionChange(uhdCB, [hdCB, fhdCB]);
-});
+// Crea istanze dei bottoni
+const resolutionButtons = [
+    new ResolutionButton('hdCB'), // Assicurati che gli ID corrispondano
+    new ResolutionButton('fhdCB'),
+    new ResolutionButton('uhdCB')
+];
 
 
 const sourcesList = [
