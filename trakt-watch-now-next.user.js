@@ -30,7 +30,7 @@
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "div[class^=aw-]{transform-origin:top;transition:.3s}.aw-search-string,.aw-button,div[class^=aw-]:focus-visible{border:0;outline:0}.aw-modal{position:fixed;z-index:100000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.9)}.aw-block{position:fixed;display:flex;flex-direction:column;top:10%;left:50%;transform:translate(-50%);width:90%;max-width:400px;max-height:80%;color:#fff;background-color:#1d1d1d;border:1px solid #000;border-radius:3px;font-family:proxima nova}.aw-type{display:grid;gap:2px;grid-template-columns:1fr 1fr;border-bottom:1px solid #000}.aw-content{max-height:100%}.aw-header{display:grid;gap:20px;padding:20px}.aw-footer{display:grid;background:#161616}.aw-button{background-color:rgba(177,16,16,.6196078431);transition:.5s}.aw-button:hover,.aw-button:focus,.aw-button:focus-visible,.aw-button-selected{background-color:#9e3131 !important}.aw-content,.aw-select{overflow:hidden;overflow-y:auto;overscroll-behavior:contain}.aw-search-string{background-color:#333;text-align:center;font-size:16px;white-space:nowrap;border-radius:3px;padding-inline:7px;overflow:hidden;text-overflow:ellipsis}.aw-search-options{display:grid;align-items:center;row-gap:10px;grid-template-columns:80px 1fr}.aw-search-option{display:grid;line-height:28px;font-size:14px}.aw-search-option:focus-visible>.aw-title{background-color:#161616}.aw-label{align-self:baseline;margin-top:3px}.aw-title{display:flex;align-items:center;justify-content:space-between;background:#333;border-radius:3px;padding-inline:7px;cursor:pointer;white-space:nowrap;overflow:hidden;height:28px}.aw-title>span:first-child{overflow:hidden;text-overflow:ellipsis}.aw-select{display:grid;padding:5px;max-height:190px;background:#333;border-radius:0 0 3px 3px}.aw-option{margin-top:2px;padding-inline:7px;cursor:pointer;background:#161616;border-radius:3px}.aw-option:hover,.aw-option:focus-visible{background:#6c6c6c}.aw-sources{display:flex;flex-direction:column;padding:20px;gap:10px}.aw-link{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:50px;font-size:13px;border:1px solid #000;border-radius:3px}.alternative-watch{display:flex;gap:10px;position:absolute;align-items:center;justify-content:center;transition:.5s;color:#fff;padding-inline:10px;box-shadow:0 0 10px #000;border-radius:3px 0 0 0;bottom:0;right:0;height:40px;width:40px;max-height:30%;max-width:40%;font-size:1.7em;opacity:.8}.alternative-watch-action{top:0;height:30px;width:100%;max-width:100%;border-radius:0;border-bottom:1px solid #000}.alternative-watch-action-mobile{height:100%;max-height:100%;width:100%;max-width:100%;border-radius:0;opacity:.7}.alternative-watch-schedule{border-radius:3px;position:initial;margin-bottom:5px;height:18px;width:fit-content;max-width:100%;padding-inline:1px 5px;font-size:1.2em;padding-top:2px}.alternative-watch-action::after,.alternative-watch-schedule::after{content:\"Watch Now\";font-size:13px;font-weight:bold;padding-top:2px}.aw-search-cbs{display:flex;justify-content:space-between;gap:20px}.aw-search-cb{display:flex;padding:5px 10px;align-items:center;justify-content:center;border-radius:3px;width:100%}.aw-search-cb:focus-visible{filter:contrast(1.4)}.aw-hidden{transform:scaleY(0) !important;max-height:0 !important;opacity:0 !important;visibility:hidden !important;border:0 !important;outline:0 !important;margin:0 !important;padding:0 !important}.aw-unselectable{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "div[class^=aw-]{transform-origin:top;transition:.3s}.aw-search-string,.aw-button,div[class^=aw-]:focus-visible{border:0;outline:0}.aw-modal{position:fixed;z-index:100000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.9)}.aw-block{position:fixed;display:flex;flex-direction:column;top:10%;left:50%;transform:translate(-50%);width:90%;max-width:400px;max-height:80%;color:#fff;background-color:#1d1d1d;border:1px solid #000;border-radius:3px;font-family:proxima nova}.aw-type{display:grid;gap:2px;grid-template-columns:1fr 1fr;border-bottom:1px solid #000}.aw-content{max-height:100%}.aw-header{display:grid;gap:20px;padding:20px}.aw-footer{display:grid;background:#161616}.aw-button{background-color:rgba(177,16,16,.6196078431);transition:.5s}.aw-button:hover,.aw-button:focus,.aw-button:focus-visible,.aw-button-selected{background-color:#9e3131 !important}.aw-content,.aw-select{overflow:hidden;overflow-y:auto;overscroll-behavior:contain}.aw-search-string{background-color:#333;text-align:center;font-size:16px;white-space:nowrap;border-radius:3px;padding-inline:7px;overflow:hidden;text-overflow:ellipsis}.aw-search-options{display:grid;align-items:center;row-gap:10px;grid-template-columns:80px 1fr}.aw-search-option{display:grid;line-height:28px;font-size:14px}.aw-search-option:focus-visible>.aw-title{background-color:#161616}.aw-label{align-self:baseline;margin-top:3px}.aw-title{display:flex;align-items:center;justify-content:space-between;background:#333;border-radius:3px;padding-inline:7px;cursor:pointer;white-space:nowrap;overflow:hidden;height:28px}.aw-title>span:first-child{overflow:hidden;text-overflow:ellipsis}.aw-select{display:grid;padding:5px;max-height:190px;background:#333;border-radius:0 0 3px 3px}.aw-option{margin-top:2px;padding-inline:7px;cursor:pointer;background:#161616;border-radius:3px}.aw-option:hover,.aw-option:focus-visible{background:#6c6c6c}.aw-sources{display:flex;flex-direction:column;padding:20px;gap:10px}.aw-link{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:50px;font-size:13px;border:1px solid #000;border-radius:3px}.alternative-watch{display:flex;gap:10px;position:absolute;align-items:center;justify-content:center;transition:.5s;color:#fff;padding-inline:10px;box-shadow:0 0 10px #000;border-radius:3px 0 0 0;bottom:0;right:0;height:40px;width:40px;max-height:30%;max-width:40%;font-size:1.7em;opacity:.8}.alternative-watch-action{top:0;height:30px;width:100%;max-width:100%;border-radius:0;border-bottom:1px solid #000}.alternative-watch-action-mobile{height:100%;max-height:100%;width:100%;max-width:100%;border-radius:0;opacity:.7}.alternative-watch-schedule{border-radius:3px;position:initial;margin-bottom:5px;height:18px;width:fit-content;max-width:100%;padding-inline:1px 5px;font-size:1.2em;padding-top:2px}.alternative-watch-action::after,.alternative-watch-schedule::after{content:\"Watch Now\";font-size:13px;font-weight:bold;padding-top:2px}.aw-search-cbs{display:flex;justify-content:space-between;gap:20px}.aw-search-cb{display:flex;padding:5px 10px;align-items:center;justify-content:center;border-radius:3px;width:100%}.aw-search-cb:focus-visible{filter:contrast(1.4)}.aw-hidden{transform:scaleY(0) !important;max-height:0 !important;opacity:0 !important;visibility:hidden !important;border:0 !important;outline:0 !important;margin:0 !important;padding:0 !important}.aw-unselectable{-webkit-user-select:--;-khtml-user-select:--;-moz-user-select:--;-ms-user-select:--;-o-user-select:--;user-select:--}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -552,8 +552,8 @@ function updater() {
 
   const changeSearchString = () => {
     const episodeInfo = () => {
-      if (selectedSeason != "None") {
-        if (selectedEpisode != "None") {
+      if (selectedSeason != "--") {
+        if (selectedEpisode != "--") {
           if (absoluteCB.active) {
             return " " + selectedEpisode;
           } else {
@@ -592,10 +592,10 @@ function updater() {
     selectedSeason = seasonLB.title.querySelector("span").textContent;
   } else {
     seasonLB.remove();
-    selectedSeason = "None";
+    selectedSeason = "--";
   }
 
-  if (selectedSeason != "None" && seasonLB.isExist(searchOptions)) {
+  if (selectedSeason != "--" && seasonLB.isExist(searchOptions)) {
     episodeLB.init(searchOptions, aw_data.episode);
     selectedEpisode = episodeLB.title.querySelector("span").textContent;
     fetch(
@@ -611,12 +611,12 @@ function updater() {
       .then((data) => {
         let episodes = [];
         episodeLB.clear({ onlyOptions: true });
-        episodeLB.update(["None"]);
+        episodeLB.update(["--"]);
         data.forEach((episode) => {
           episodes.push(checkSepNum(episode.number));
         });
         episodeLB.update(episodes);
-        selectedEpisode != "None" &&
+        selectedEpisode != "--" &&
           !episodes.includes(selectedEpisode) &&
           episodeLB.setTitle(episodes[0]);
         selectedEpisode = episodeLB.title.querySelector("span").textContent;
@@ -625,7 +625,7 @@ function updater() {
       });
   } else {
     episodeLB.remove();
-    selectedEpisode = "None";
+    selectedEpisode = "--";
 
     changeSearchString();
   }
@@ -650,7 +650,7 @@ function updater() {
   );
 
   addSites();
-    absoluteCB.disabled = selectedEpisode == 'None';
+    absoluteCB.disabled = selectedEpisode == '--';
   absoluteCB.setStyles();
 }
 
@@ -896,8 +896,8 @@ function awBlock(type, attributes, styles) {
     languageLB.update(sourcesLanguages);
     categoryLB.update(sourcesCategories);
     sourceLB.update(sourcesTypes);
-    seasonLB.update(["None"]);
-    episodeLB.update(["None"]);
+    seasonLB.update(["--"]);
+    episodeLB.update(["--"]);
 
     updater();
     reqCall_Data();
