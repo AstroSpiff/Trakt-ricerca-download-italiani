@@ -307,14 +307,14 @@ const aw_data = {
 };
 
 const localInfo = new LocalInfo();
-const yearCB = new CB("year");
-const absoluteCB = new CB("absolute");
-const languageLB = new LB("language");
-const categoryLB = new LB("category");
-const sourceLB = new LB("source");
+const yearCB = new CB("anno");
+const absoluteCB = new CB("assoluto");
+const languageLB = new LB("lingua");
+const categoryLB = new LB("categora");
+const sourceLB = new LB("sorgente");
 const aliasLB = new LB("alias");
-const seasonLB = new LB("season");
-const episodeLB = new LB("episode");
+const seasonLB = new LB("stagione");
+const episodeLB = new LB("episodio");
 
 document.addEventListener("DOMContentLoaded", () => {
   const style = document.createElement('style');
