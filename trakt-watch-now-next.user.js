@@ -500,6 +500,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// All'interno della funzione dove crei i bottoni (ad esempio, nella funzione document.addEventListener("DOMContentLoaded", ...))
+
+const cbContainer1 = document.createElement("div");
+const cbContainer2 = document.createElement("div");
+
+cbContainer1.classList.add("cb-row");
+cbContainer2.classList.add("cb-row");
+
+// Aggiungi i bottoni "Anno" e "Assoluto" a cbContainer1
+yearCB.init("append", cbContainer1);
+absoluteCB.init("append", cbContainer1);
+
+// Aggiungi i bottoni "720p", "1080p" e "2160p" a cbContainer2
+hdCB.init("append", cbContainer2);
+fhdCB.init("append", cbContainer2);
+uhdCB.init("append", cbContainer2);
+
+// Appendi cbContainer1 e cbContainer2 dove desideri nel DOM
+const awSearchCbs = document.querySelector(".aw-search-cbs");
+awSearchCbs.appendChild(cbContainer1);
+awSearchCbs.appendChild(cbContainer2);
+
+
+  
 // Gestore di eventi per il bottone 720p
 hdCB.block.addEventListener("click", () => {
   if (!hdCB.disabled) {
