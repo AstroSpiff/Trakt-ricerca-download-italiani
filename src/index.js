@@ -344,7 +344,7 @@ function updater() {
       if (selectedSeason != "None") {
         if (selectedEpisode != "None") {
           if (absoluteCB.active) {
-            return " " + selectedEpisode;
+            return " s" + selectedEpisode;
           } else {
             return ` s${selectedSeason}e${selectedEpisode}`;
           }
