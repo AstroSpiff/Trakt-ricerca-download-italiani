@@ -583,7 +583,7 @@ function updater() {
     searchString.value =
       (selectedAlias ? selectedAlias : aw_data.title) +
       episodeInfo() +
-      (yearCB.active ? " " + aw_data.year : "");
+      (yearCB.active ? " " + aw_data.year : ""); + (hdCB.active ? "720p"); + (fhdCB.active ? "1080p"); + (uhdCB.active ? "2160p");
   };
 
   const optionsCheck = (title, options, checkArray) => {
@@ -834,6 +834,9 @@ function awBlock(type, attributes, styles) {
         JSON.stringify({
           year: yearCB.active.toString(),
           absolute: absoluteCB.active.toString(),
+          hd: hdCB.active.toString(),
+          fhd: fhdCB.active.toString(),
+          uhd: uhdCB.active.toString(),
           language: languageLB.title.querySelector("span").textContent,
           category: categoryLB.title.querySelector("span").textContent,
           source: sourceLB.title.querySelector("span").textContent,
@@ -901,6 +904,9 @@ function awBlock(type, attributes, styles) {
 
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
+    hdCB.init("append", document.querySelector(".aw-search-cbs"));
+    fhdCB.init("append", document.querySelector(".aw-search-cbs"));
+    uhdCB.init("append", document.querySelector(".aw-search-cbs"));
 
     languageLB.init(document.querySelector(".aw-search-options"));
     categoryLB.init(document.querySelector(".aw-search-options"));
