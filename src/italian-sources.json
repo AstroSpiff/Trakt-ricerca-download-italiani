@@ -15,6 +15,14 @@
             "link": "https://redprimerose-prowlarr.cp07.cloudboxes.io/search?query=%s"
           },
           {
+            "name": "Il Corsaro Nero",
+            "link": "https://ilcorsaronero.link/argh.php?search=%s"
+          },
+          {
+            "name": "BTDigg",
+            "link": "https://btdig.com/search?q=%s"
+          },
+          {
             "name": "1337x",
             "link": "https://1337x.to/search/%s/1/"
           },
