@@ -371,7 +371,7 @@ function updater() {
     searchString.value =
       (selectedAlias ? selectedAlias : aw_data.title) +
       episodeInfo() +
-      (yearCB.active ? " " + aw_data.year : ""); + (hdCB.active ? "720p"); + (fhdCB.active ? "1080p"); + (uhdCB.active ? "2160p");
+      (yearCB.active ? " " + aw_data.year : "") + (hdCB.active ? "720p") + (fhdCB.active ? "1080p") + (uhdCB.active ? "2160p");
   };
 
   const optionsCheck = (title, options, checkArray) => {
