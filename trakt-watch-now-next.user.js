@@ -572,6 +572,21 @@ function updater() {
       episodeInfo() +
       (yearCB.active ? " " + aw_data.year : "");
   };
+  
+  // Aggiungi le nuove condizioni per i bottoni "ITA", "720p", "1080p", "2160p"
+  if (itaButton.active) {
+    searchString.value += " ITA";
+  }
+  if (resolution720pButton.active) {
+    searchString.value += " 720p";
+  }
+  if (resolution1080pButton.active) {
+    searchString.value += " 1080p";
+  }
+  if (resolution2160pButton.active) {
+    searchString.value += " 2160p";
+  }
+
 
   const optionsCheck = (title, options, checkArray) => {
     for (let option of options) {
