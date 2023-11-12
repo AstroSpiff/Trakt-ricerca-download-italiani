@@ -330,6 +330,36 @@ document.addEventListener("DOMContentLoaded", () => {
   resolution1080pButton.init("append", document.querySelector(".aw-search-cbs"));
   resolution2160pButton.init("append", document.querySelector(".aw-search-cbs"));
 
+  // Aggiunta dei listener per la gestione dell'esclusività
+  resolution720pButton.block.addEventListener("click", () => {
+    if (!resolution1080pButton.disabled) {
+      resolution1080pButton.active = false;
+      resolution2160pButton.active = false;
+      resolution1080pButton.setStyles();
+      resolution2160pButton.setStyles();
+      updater();
+    }
+  });
+
+  resolution1080pButton.block.addEventListener("click", () => {
+    if (!resolution1080pButton.disabled) {
+      resolution720pButton.active = false;
+      resolution2160pButton.active = false;
+      resolution720pButton.setStyles();
+      resolution2160pButton.setStyles();
+      updater();
+    }
+  });
+
+  resolution2160pButton.block.addEventListener("click", () => {
+    if (!resolution1080pButton.disabled) {
+      resolution720pButton.active = false;
+      resolution1080pButton.active = false;
+      resolution720pButton.setStyles();
+      resolution1080pButton.setStyles();
+      updater();
+    }
+  });
 });
 
 //Functions
@@ -345,6 +375,24 @@ function updater() {
   let selectedEpisode;
 
   const changeSearchString = () => {
+    let searchTerms = [selectedAlias ? selectedAlias : aw_data.title];
+
+    // Aggiungi la logica per i nuovi bottoni
+    if (itaButton.active) {
+      searchTerms.push("ITA");
+    }
+    if (resolution720pButton.active) {
+      searchTerms.push("720p");
+    }
+    if (resolution1080pButton.active) {
+      searchTerms.push("1080p");
+    }
+    if (resolution2160pButton.active) {
+      searchTerms.push("2160p");
+    }
+    searchString.value = searchTerms.join(" ") + episodeInfo() + (yearCB.active ? " " + aw_data.year : "");
+  };
+
     const episodeInfo = () => {
       if (selectedSeason != "None") {
         if (selectedEpisode != "None") {
