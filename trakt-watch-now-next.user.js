@@ -217,8 +217,8 @@ var styles = __webpack_require__(447);
 
 
 const traktApiKey =
-  "d87cd4dc7419e7be1f670003b112ccbd66c4a67e8f360c71abd7a9aef8f46e8d";
-const tmdbApiKey = "a6dc8b1bcbeeaf4c970242298ccf059f";
+  "ca8c07cc9f8e355913aecdd6e95cfc926ddd3b13e4908318ebb09c808e578d5f";
+const tmdbApiKey = "35125a44b61ff884093230540dc1c7bc";
 const traktApiHeaders = {
   "Content-Type": "application/json",
   "trakt-api-version": "2",
