@@ -45,6 +45,19 @@
         ]
       },
       {
+        "name": "DDL",
+        "list": [
+          {
+            "name": "Paradiso Italiano",
+            "link": "https://italyparadiso.com/index.php?do=search&subaction=search&search_start=0&full_search=0&story=%s"
+          },
+          {
+            "name": "FILMHDCITY",
+            "link": "https://filmhdcity.com/f/name=%s"
+          }
+        ]
+      }
+      {
         "name": "Database",
         "list": [
         ]
