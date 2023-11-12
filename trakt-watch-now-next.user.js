@@ -35,6 +35,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "div[class^=aw-]{transform-origin:top;t
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
 */
+
 module.exports = function (cssWithMappingToString) {
   var list = [];
   // return the list of modules as css string
@@ -112,6 +113,7 @@ module.exports = function (cssWithMappingToString) {
   };
   return list;
 };
+
 /***/ }),
 /***/ 81:
 /***/ ((module) => {
@@ -176,6 +178,8 @@ module.exports = function (i) {
 /******/ 	})();
 /******/ 	
 /************************************************************************/
+
+
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
@@ -196,6 +200,7 @@ const traktApiHeaders = {
   "trakt-api-version": "2",
   "trakt-api-key": traktApiKey,
 };
+
 class LocalInfo {
   constructor() {
     this.all = {};
@@ -212,6 +217,7 @@ class LocalInfo {
     this.season;
     this.episode;
   }
+  
   get() {
     this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
     if (this.all) {
@@ -228,6 +234,7 @@ class LocalInfo {
       this.episode = this.all.episode;
     }
   }
+  
   clear() {
     this.all = {};
     this.year = null;
@@ -243,6 +250,7 @@ class LocalInfo {
     this.episode = null;
   }
 }
+
 class CB {
   constructor(type) {
     this.type = type;
@@ -293,6 +301,45 @@ class CB {
     this.setStyles();
   }
 }
+
+class ResolutionButton {
+    constructor(id) {
+        this.button = document.getElementById(id);
+        this.isSelected = false;
+
+        // Aggiungi il listener per il click
+        this.button.addEventListener('click', () => {
+            this.toggleSelection();
+            resolutionButtons.forEach(btn => {
+                if (btn !== this && btn.isSelected) {
+                    btn.deselect();
+                }
+            });
+        });
+    }
+
+    toggleSelection() {
+        this.isSelected = !this.isSelected;
+        this.updateStyle();
+    }
+
+    deselect() {
+        this.isSelected = false;
+        this.updateStyle();
+    }
+
+    updateStyle() {
+        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
+    }
+}
+
+// Crea istanze dei bottoni
+const resolutionButtons = [
+    new ResolutionButton('hdCB'), // Assicurati che gli ID corrispondano
+    new ResolutionButton('fhdCB'),
+    new ResolutionButton('uhdCB')
+];
+
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
@@ -402,6 +449,7 @@ class LB {
     });
   }
 }
+
 const sourcesList = [
   {
     name: "Italian",
