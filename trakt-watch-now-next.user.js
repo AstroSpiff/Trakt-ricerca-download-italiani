@@ -355,6 +355,40 @@ class LB {
     });
   }
 
+function handleResolutionChange(selectedCb, otherCbs) {
+    if (!selectedCb.disabled) {
+        selectedCb.active = !selectedCb.active;
+        selectedCb.setStyles();
+        if (selectedCb.active) {
+            otherCbs.forEach(cb => {
+                if (cb.active) {
+                    cb.active = false;
+                    cb.setStyles();
+                }
+            });
+        }
+        updater();
+    }
+}
+
+// Aggiungi i gestori di eventi per hdCB (720p)
+hdCB.block.addEventListener("click", () => handleResolutionChange(hdCB, [fhdCB, uhdCB]));
+hdCB.block.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") handleResolutionChange(hdCB, [fhdCB, uhdCB]);
+});
+
+// Ripeti per fhdCB (1080p) e uhdCB (2160p)
+fhdCB.block.addEventListener("click", () => handleResolutionChange(fhdCB, [hdCB, uhdCB]));
+fhdCB.block.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") handleResolutionChange(fhdCB, [hdCB, uhdCB]);
+});
+
+uhdCB.block.addEventListener("click", () => handleResolutionChange(uhdCB, [hdCB, fhdCB]));
+uhdCB.block.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") handleResolutionChange(uhdCB, [hdCB, fhdCB]);
+});
+
+  
   #toggleList(event) {
     if (
       !this.searchOption.contains(event.target) ||
