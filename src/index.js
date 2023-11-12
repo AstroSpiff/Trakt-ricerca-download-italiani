@@ -1,7 +1,7 @@
 "use strict";
 
 import englishSources from './english-sources.json';
-import russianSources from './russian-sources.json';
+import italianSources from './italian-sources.json';
 import rawSources from './raw-sources.json';
 import css from './styles.css';
 
@@ -242,8 +242,8 @@ const sourcesList = [
     list: englishSources,
   },
   {
-    name: "Russian",
-    list: russianSources,
+    name: "Italian",
+    list: italianSources,
   },
   {
     name: "Raw",
