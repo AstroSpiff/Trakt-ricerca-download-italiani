@@ -110,45 +110,6 @@ class CB {
   }
 }
 
-class ResolutionButton {
-    constructor(id, allButtons) {
-        this.button = document.getElementById(id);
-        this.allButtons = allButtons;
-        this.isSelected = false;
-
-        // Aggiungi il listener per il click
-        this.button.addEventListener('click', () => {
-            // Deseleziona tutti i bottoni
-            this.allButtons.forEach(btn => btn.deselect());
-            // Seleziona questo bottone
-            this.select();
-        });
-    }
-
-    select() {
-        this.isSelected = true;
-        this.updateStyle();
-    }
-
-    deselect() {
-        this.isSelected = false;
-        this.updateStyle();
-    }
-
-    updateStyle() {
-        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
-    }
-}
-
-// Inizialmente crea un array vuoto
-const resolutionButtons = [];
-
-// Aggiungi ogni bottone all'array dopo che è stato creato
-resolutionButtons.push(new ResolutionButton('hdCB', resolutionButtons));
-resolutionButtons.push(new ResolutionButton('fhdCB', resolutionButtons));
-resolutionButtons.push(new ResolutionButton('uhdCB', resolutionButtons));
-
-
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
@@ -175,17 +136,6 @@ class LB {
   #toggleList(event) {
     if (
       !this.searchOption.contains(event.target) ||
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
       !this.searchOption
         .querySelector(".aw-select")
         .classList.contains("aw-hidden")
@@ -357,7 +307,45 @@ document.addEventListener("DOMContentLoaded", () => {
     awButtons(element);
   }
 });
+
+// Gestore di eventi per il bottone 720p
+hdCB.block.addEventListener("click", () => {
+  if (!hdCB.disabled) {
+    fhdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili per riflettere lo stato attivo/disattivo
+    fhdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+
+// Gestore di eventi per il bottone 1080p
+fhdCB.block.addEventListener("click", () => {
+  if (!fhdCB.disabled) {
+    hdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+
+// Gestore di eventi per il bottone 2160p
+uhdCB.block.addEventListener("click", () => {
+  if (!uhdCB.disabled) {
+    hdCB.active = false;
+    fhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    fhdCB.setStyles();
+    updater();
+  }
+});
+
 //Functions
+
 function updater() {
   const searchString = document.querySelector(".aw-search-string");
   const searchOptions = document.querySelector(".aw-search-options");
