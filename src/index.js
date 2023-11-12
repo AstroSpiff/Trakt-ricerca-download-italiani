@@ -245,44 +245,6 @@ class LB {
   }
 }
 
-class ResolutionButton {
-    constructor(id) {
-        this.button = document.getElementById(id);
-        this.isSelected = false;
-
-        // Aggiungi il listener per il click
-        this.button.addEventListener('click', () => {
-            this.toggleSelection();
-            resolutionButtons.forEach(btn => {
-                if (btn !== this && btn.isSelected) {
-                    btn.deselect();
-                }
-            });
-        });
-    }
-
-    toggleSelection() {
-        this.isSelected = !this.isSelected;
-        this.updateStyle();
-    }
-
-    deselect() {
-        this.isSelected = false;
-        this.updateStyle();
-    }
-
-    updateStyle() {
-        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
-    }
-}
-
-// Crea istanze dei bottoni
-const resolutionButtons = [
-    new ResolutionButton('hdCB'), // Assicurati che gli ID corrispondano
-    new ResolutionButton('fhdCB'),
-    new ResolutionButton('uhdCB')
-];
-
 const sourcesList = [
   {
     name: "Italian",
