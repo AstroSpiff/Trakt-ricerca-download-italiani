@@ -302,52 +302,6 @@ class CB {
   }
 }
 
-class ResolutionButton {
-    constructor(id) {
-        this.button = document.getElementById(id);
-        this.isSelected = false;
-
-        // Aggiungi il listener per il click
-        this.button.addEventListener('click', () => {
-            // Gestione della selezione
-            this.handleSelection();
-        });
-    }
-
-    handleSelection() {
-        if (!this.isSelected) {
-            // Deseleziona tutti i bottoni
-            resolutionButtons.forEach(btn => {
-                if (btn !== this) {
-                    btn.deselect();
-                }
-            });
-            // Seleziona questo bottone
-            this.select();
-        }
-    }
-
-    select() {
-        this.isSelected = true;
-        this.updateStyle();
-    }
-
-    deselect() {
-        this.isSelected = false;
-        this.updateStyle();
-    }
-
-    updateStyle() {
-        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
-    }
-}
-
-const resolutionButtons = [
-    new ResolutionButton('hdCB'),
-    new ResolutionButton('fhdCB'),
-    new ResolutionButton('uhdCB')
-];
-
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
@@ -545,7 +499,45 @@ document.addEventListener("DOMContentLoaded", () => {
     awButtons(element);
   }
 });
+
+// Gestore di eventi per il bottone 720p
+hdCB.block.addEventListener("click", () => {
+  if (!hdCB.disabled) {
+    fhdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili per riflettere lo stato attivo/disattivo
+    fhdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+
+// Gestore di eventi per il bottone 1080p
+fhdCB.block.addEventListener("click", () => {
+  if (!fhdCB.disabled) {
+    hdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+
+// Gestore di eventi per il bottone 2160p
+uhdCB.block.addEventListener("click", () => {
+  if (!uhdCB.disabled) {
+    hdCB.active = false;
+    fhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    fhdCB.setStyles();
+    updater();
+  }
+});
+
 //Functions
+  
 function updater() {
   const searchString = document.querySelector(".aw-search-string");
   const searchOptions = document.querySelector(".aw-search-options");
