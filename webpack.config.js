@@ -2,15 +2,15 @@ const webpack = require('webpack');
 const metadata = [
   "// ==UserScript==",
   "// @name        Trakt.tv Watch Now Alternative",
-  "// @namespace   https://github.com/sergeyhist/trakt-watch-now-alternative/blob/main/trakt-watch-now-next.user.js",
+  "// @namespace   https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/blob/main/trakt-watch-now-next.user.js",
   "// @match       *://trakt.tv/*",
   "// @version     4.6.3",
   "// @author      Hist",
   "// @description Alternative version for trakt.tv watch now modal",
   "// @run-at      document-start",
-  "// @downloadURL https://github.com/sergeyhist/trakt-watch-now-alternative/raw/main/trakt-watch-now-next.user.js",
-  "// @updateURL   https://github.com/sergeyhist/trakt-watch-now-alternative/raw/main/trakt-watch-now-next.user.js",
-  "// @homepageURL https://github.com/sergeyhist/trakt-watch-now-alternative",
+  "// @downloadURL https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js",
+  "// @updateURL   https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js",
+  "// @homepageURL https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/trakt-watch-now-alternative",
   "// ==/UserScript==",
   ""
 ];
