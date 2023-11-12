@@ -234,6 +234,12 @@ div[class^="aw-"] {
   width: 100%;
 }
 
+.cb-row {
+  display: flex;
+  justify-content: start;
+  gap: 10px; /* Regola lo spazio tra i bottoni */
+}
+
 .aw-search-cb:focus-visible { 
   filter: contrast(1.4);
 }
