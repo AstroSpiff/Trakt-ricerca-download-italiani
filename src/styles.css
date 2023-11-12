@@ -226,19 +226,12 @@ div[class^="aw-"] {
 }
 
 .aw-search-cb {
-  display: inline-block; /* Assicura che i bottoni siano visualizzati */
-  margin: 5px; /* Aggiunge un po' di spazio intorno ai bottoni */
-  padding: 5px 10px; /* Aggiunge un po' di spazio interno ai bottoni */
-  background-color: #333; /* Colore di sfondo dei bottoni */
-  color: white; /* Colore del testo */
-  border-radius: 5px; /* Rende i bordi dei bottoni arrotondati */
-  cursor: pointer; /* Cambia il cursore quando si passa sopra al bottone */
-  font-size: 14px; /* Imposta la dimensione del font */
-}
-
-.aw-search-cb:hover {
-  background-color: #555; /* Cambia il colore di sfondo quando il mouse è sopra il bottone */
-}
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 100%;
 
 .aw-search-cb:focus-visible { 
   filter: contrast(1.4);
