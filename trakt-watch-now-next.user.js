@@ -10,14 +10,11 @@
 // @updateURL   https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js
 // @homepageURL https://github.com/AstroSpiff/Trakt-ricerca-download-italiani
 // ==/UserScript==
-
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
 /***/ 447:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
-
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -26,29 +23,20 @@
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(645);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
-
-
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "div[class^=aw-]{transform-origin:top;transition:.3s}.aw-search-string,.aw-button,div[class^=aw-]:focus-visible{border:0;outline:0}.aw-modal{position:fixed;z-index:100000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.9)}.aw-block{position:fixed;display:flex;flex-direction:column;top:10%;left:50%;transform:translate(-50%);width:90%;max-width:400px;max-height:80%;color:#fff;background-color:#1d1d1d;border:1px solid #000;border-radius:3px;font-family:proxima nova}.aw-type{display:grid;gap:2px;grid-template-columns:1fr 1fr;border-bottom:1px solid #000}.aw-content{max-height:100%}.aw-header{display:grid;gap:20px;padding:20px}.aw-footer{display:grid;background:#161616}.aw-button{background-color:rgba(177,16,16,.6196078431);transition:.5s}.aw-button:hover,.aw-button:focus,.aw-button:focus-visible,.aw-button-selected{background-color:#9e3131 !important}.aw-content,.aw-select{overflow:hidden;overflow-y:auto;overscroll-behavior:contain}.aw-search-string{background-color:#333;text-align:center;font-size:16px;white-space:nowrap;border-radius:3px;padding-inline:7px;overflow:hidden;text-overflow:ellipsis}.aw-search-options{display:grid;align-items:center;row-gap:10px;grid-template-columns:80px 1fr}.aw-search-option{display:grid;line-height:28px;font-size:14px}.aw-search-option:focus-visible>.aw-title{background-color:#161616}.aw-label{align-self:baseline;margin-top:3px}.aw-title{display:flex;align-items:center;justify-content:space-between;background:#333;border-radius:3px;padding-inline:7px;cursor:pointer;white-space:nowrap;overflow:hidden;height:28px}.aw-title>span:first-child{overflow:hidden;text-overflow:ellipsis}.aw-select{display:grid;padding:5px;max-height:190px;background:#333;border-radius:0 0 3px 3px}.aw-option{margin-top:2px;padding-inline:7px;cursor:pointer;background:#161616;border-radius:3px}.aw-option:hover,.aw-option:focus-visible{background:#6c6c6c}.aw-sources{display:flex;flex-direction:column;padding:20px;gap:10px}.aw-link{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:50px;font-size:13px;border:1px solid #000;border-radius:3px}.alternative-watch{display:flex;gap:10px;position:absolute;align-items:center;justify-content:center;transition:.5s;color:#fff;padding-inline:10px;box-shadow:0 0 10px #000;border-radius:3px 0 0 0;bottom:0;right:0;height:40px;width:40px;max-height:30%;max-width:40%;font-size:1.7em;opacity:.8}.alternative-watch-action{top:0;height:30px;width:100%;max-width:100%;border-radius:0;border-bottom:1px solid #000}.alternative-watch-action-mobile{height:100%;max-height:100%;width:100%;max-width:100%;border-radius:0;opacity:.7}.alternative-watch-schedule{border-radius:3px;position:initial;margin-bottom:5px;height:18px;width:fit-content;max-width:100%;padding-inline:1px 5px;font-size:1.2em;padding-top:2px}.alternative-watch-action::after,.alternative-watch-schedule::after{content:\"Watch Now\";font-size:13px;font-weight:bold;padding-top:2px}.aw-search-cbs{display:flex;justify-content:space-between;gap:20px}.aw-search-cb{display:flex;padding:5px 10px;align-items:center;justify-content:center;border-radius:3px;width:100%}.aw-search-cb:focus-visible{filter:contrast(1.4)}.aw-hidden{transform:scaleY(0) !important;max-height:0 !important;opacity:0 !important;visibility:hidden !important;border:0 !important;outline:0 !important;margin:0 !important;padding:0 !important}.aw-unselectable{-webkit-user-select:None;-khtml-user-select:None;-moz-user-select:None;-ms-user-select:None;-o-user-select:None;user-select:None}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
 /***/ }),
-
 /***/ 645:
 /***/ ((module) => {
-
-
-
 /*
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
 */
 module.exports = function (cssWithMappingToString) {
   var list = [];
-
   // return the list of modules as css string
   list.toString = function toString() {
     return this.map(function (item) {
@@ -76,7 +64,6 @@ module.exports = function (cssWithMappingToString) {
       return content;
     }).join("");
   };
-
   // import a list of modules into the list
   list.i = function i(modules, media, dedupe, supports, layer) {
     if (typeof modules === "string") {
@@ -125,20 +112,13 @@ module.exports = function (cssWithMappingToString) {
   };
   return list;
 };
-
 /***/ }),
-
 /***/ 81:
 /***/ ((module) => {
-
-
-
 module.exports = function (i) {
   return i[1];
 };
-
 /***/ })
-
 /******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
@@ -199,7 +179,6 @@ module.exports = function (i) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-
 ;// CONCATENATED MODULE: ./src/italian-sources.json
 const italian_sources_namespaceObject = JSON.parse('[{"name":"General","list":[{"name":"Online","list":[]},{"name":"Torrent","list":[{"name":"Prowlarr","link":"https://redprimerose-prowlarr.cp07.cloudboxes.io/search?query=%s"},{"name":"IlCorsaroNero","link":"https://ilcorsaronero.link/argh.php?search=%s"},{"name":"BTDigg","link":"https://btdig.com/search?q=%s"},{"name":"1337x","link":"https://1337x.to/search/%s/1/"},{"name":"SolidTorrents","link":"https://solidtorrents.net/search?q=%s"},{"name":"TorrentGalaxy","link":"https://torrentgalaxy.to/torrents.php?c9=1&c3=1&c46=1&c45=1&c42=1&c4=1&c1=1&c25=1&c41=1&c5=1&c6=1&c7=1&search=%s&lang=0&nox=2#results"},{"name":"Torrents.csv","link":"https://torrents-csv.ml/search/%s?"},{"name":"ThePirateBay","link":"https://thepiratebay.org/search/%s/0/3/0"}]},{"name":"DDL","list":[{"name":"ParadisoItaliano","link":"https://italyparadiso.com/index.php?do=search&subaction=search&search_start=0&full_search=0&story=%s"},{"name":"FILMHDCITY","link":"https://filmhdcity.com/f/name=%s"}]},{"name":"Database","list":[]}]},{"name":"Anime","list":[{"name":"Online","list":[]},{"name":"Torrent","list":[]},{"name":"Database","list":[]}]},{"name":"AsianDrama","list":[{"name":"Online","list":[]}]}]');
 ;// CONCATENATED MODULE: ./src/english-sources.json
@@ -209,13 +188,6 @@ const raw_sources_namespaceObject = JSON.parse('[{"name":"Anime","list":[{"name"
 // EXTERNAL MODULE: ./src/styles.css
 var styles = __webpack_require__(447);
 ;// CONCATENATED MODULE: ./src/index.js
-
-
-
-
-
-
-
 const traktApiKey =
   "ca8c07cc9f8e355913aecdd6e95cfc926ddd3b13e4908318ebb09c808e578d5f";
 const tmdbApiKey = "35125a44b61ff884093230540dc1c7bc";
@@ -224,7 +196,6 @@ const traktApiHeaders = {
   "trakt-api-version": "2",
   "trakt-api-key": traktApiKey,
 };
-
 class LocalInfo {
   constructor() {
     this.all = {};
@@ -241,7 +212,6 @@ class LocalInfo {
     this.season;
     this.episode;
   }
-
   get() {
     this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
     if (this.all) {
@@ -258,7 +228,6 @@ class LocalInfo {
       this.episode = this.all.episode;
     }
   }
-
   clear() {
     this.all = {};
     this.year = null;
@@ -274,7 +243,6 @@ class LocalInfo {
     this.episode = null;
   }
 }
-
 class CB {
   constructor(type) {
     this.type = type;
@@ -287,7 +255,6 @@ class CB {
     this.block.id = `aw-${type}`;
     this.block.tabIndex = '0';
     this.block.append(this.label);
-
     this.block.addEventListener("click", () => {
       if (!this.disabled) {
         this.active = !this.active;
@@ -295,7 +262,6 @@ class CB {
         updater();
       }
     });
-
     this.block.addEventListener("keydown", (e) => {
       if (!this.disabled && e.key == "Enter") {
         this.active = !this.active;
@@ -313,7 +279,6 @@ class CB {
       this.block.style.background = '#333333';
       this.label.style.opacity = '.5'
     };
-
     if (this.disabled) {
       this.block.style.opacity = '.2';
       this.block.style.cursor = 'default';
@@ -322,14 +287,12 @@ class CB {
       this.block.style.cursor = 'pointer';
     };
   }
-
   init(type, root) {
     root[type](this.block);
     this.active = localInfo[this.type] == "true" ? true : false;
     this.setStyles();
   }
 }
-
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
@@ -345,16 +308,13 @@ class LB {
     this.label.textContent = upFL(this.type) + ":";
     this.select.classList.add("aw-select", "aw-hidden");
     this.searchOption.append(this.title, this.select);
-
     document.addEventListener("click", (e) => {
       this.#toggleList(e);
     });
-
     document.addEventListener("keydown", (e) => {
       e.key == "Enter" && this.#toggleList(e);
     });
   }
-  
   #toggleList(event) {
     if (
       !this.searchOption.contains(event.target) ||
@@ -383,16 +343,13 @@ class LB {
       }, 200);
     }
   }
-
   #selectOption(option) {
     this.setTitle(option);
     this.title.focus();
     updater();
   }
-
   #optionCreate(option) {
     let optionBlock = document.createElement("div");
-
     optionBlock.tabIndex = "0";
     optionBlock.textContent = option;
     optionBlock.classList.add("aw-option", "aw-unselectable");
@@ -400,24 +357,19 @@ class LB {
     this.localInfo &&
       option == this.localInfo[this.type] &&
       (this.title.textContent = option);
-
     optionBlock.onclick = () => {
       this.#selectOption(option);
     };
-
     optionBlock.onkeydown = (e) => {
       e.key == "Enter" && this.#selectOption(option);
     };
   }
-
   setTitle(text) {
     this.title.querySelector("span").textContent = text;
   }
-
   getTitle() {
     return this.title.querySelector("span").textContent;
   }
-
   init(root, initial) {
     if (!root.contains(this.label)) {
       localInfo[this.type] && this.setTitle(localInfo[this.type]);
@@ -425,30 +377,24 @@ class LB {
       root.append(this.label, this.searchOption);
     }
   }
-
   remove() {
     this.label.remove();
     this.searchOption.remove();
   }
-
   update(items) {
     for (let item of items) {
       this.#optionCreate(item);
     }
-
     if (this.title.querySelector("span").textContent == "") {
       this.setTitle(items[0]);
     }
   }
-
   getOptions() {
     return this.searchOption.querySelectorAll(".aw-option");
   }
-
   isExist(root) {
     return root.contains(this.searchOption);
   }
-
   clear(onlyOptions = false) {
     !onlyOptions && this.setTitle("");
     this.getOptions().forEach((option) => {
@@ -456,7 +402,6 @@ class LB {
     });
   }
 }
-
 const sourcesList = [
   {
     name: "Italian",
@@ -474,7 +419,6 @@ const sourcesList = [
 const sourcesLanguages = [];
 const sourcesCategories = [];
 const sourcesTypes = [];
-
 sourcesList.forEach((item) => {
   sourcesLanguages.push(item.name);
   item.list.forEach((item1) => {
@@ -486,7 +430,6 @@ sourcesList.forEach((item) => {
     );
   });
 });
-
 const playItems = [
   {
     link: '[itemtype="http://schema.org/TVSeries"]',
@@ -514,7 +457,6 @@ const playItems = [
     type: "shows",
   },
 ];
-
 const aw_data = {
   id: "",
   tmdb: "",
@@ -526,7 +468,6 @@ const aw_data = {
   abs_episode: "",
   seasons: [],
 };
-
 const localInfo = new LocalInfo();
 const yearCB = new CB("anno");
 const absoluteCB = new CB("assoluto");
@@ -539,10 +480,8 @@ const sourceLB = new LB("sorgente");
 const aliasLB = new LB("alias");
 const seasonLB = new LB("stagione");
 const episodeLB = new LB("episodio");
-
 document.addEventListener("DOMContentLoaded", () => {
   const style = document.createElement('style');
-
   style.textContent = styles/* default */.Z;
   document.head.appendChild(style);
   
@@ -550,9 +489,7 @@ document.addEventListener("DOMContentLoaded", () => {
     awButtons(element);
   }
 });
-
 //Functions
-
 function updater() {
   const searchString = document.querySelector(".aw-search-string");
   const searchOptions = document.querySelector(".aw-search-options");
@@ -562,7 +499,6 @@ function updater() {
   let selectedAlias = aliasLB.title.querySelector("span").textContent;
   let selectedSeason;
   let selectedEpisode;
-
   const changeSearchString = () => {
     const episodeInfo = () => {
       if (selectedSeason != "None") {
@@ -579,7 +515,6 @@ function updater() {
         return "";
       }
     };
-
     searchString.value =
       (selectedAlias ? selectedAlias : aw_data.title) +
       episodeInfo() +
@@ -587,14 +522,11 @@ function updater() {
       (hdCB.active ? " 720p" : "") + 
       (fhdCB.active ? " 1080p" : "") + 
       (uhdCB.active ? " 2160p" : "");
-
   };
-
   const optionsCheck = (title, options, checkArray) => {
     for (let option of options) {
       if (!checkArray.find((element) => element.name == option.textContent)) {
         option.classList.add("aw-hidden");
-
         if (title.textContent == option.textContent) {
           title.textContent = option.parentElement.querySelector(
             "div:not(.aw-hidden)"
@@ -603,7 +535,6 @@ function updater() {
       }
     }
   };
-
   if (["Torrent", "DDL"].includes(selectedSource) && aw_data.type == "shows") {
     seasonLB.init(searchOptions, aw_data.season);
     selectedSeason = seasonLB.title.querySelector("span").textContent;
@@ -611,7 +542,6 @@ function updater() {
     seasonLB.remove();
     selectedSeason = "None";
   }
-
   if (selectedSeason != "None" && seasonLB.isExist(searchOptions)) {
     episodeLB.init(searchOptions, aw_data.episode);
     selectedEpisode = episodeLB.title.querySelector("span").textContent;
@@ -637,27 +567,22 @@ function updater() {
           !episodes.includes(selectedEpisode) &&
           episodeLB.setTitle(episodes[0]);
         selectedEpisode = episodeLB.title.querySelector("span").textContent;
-
         changeSearchString();
       });
   } else {
     episodeLB.remove();
     selectedEpisode = "None";
-
     changeSearchString();
   }
-
   for (let option of document.querySelectorAll(".aw-option")) {
     option.classList.contains("aw-hidden") &&
       option.classList.remove("aw-hidden");
   }
-
   optionsCheck(
     categoryLB.title.querySelector("span"),
     categoryLB.getOptions(),
     sourcesList.find((element) => element.name == selectedLanguage).list
   );
-
   optionsCheck(
     sourceLB.title.querySelector("span"),
     sourceLB.getOptions(),
@@ -665,19 +590,15 @@ function updater() {
       .find((element) => element.name == selectedLanguage)
       .list.find((element) => element.name == selectedCategory).list
   );
-
   addSites();
     absoluteCB.disabled = selectedEpisode == 'None';
   absoluteCB.setStyles();
 }
-
 function awButtons(playobject) {
   setInterval(function () {
     let playNodes = document.querySelectorAll(playobject.link);
-
     for (let node of playNodes) {
       let attributes = [];
-
       switch (playobject.link) {
         case ".schedule-episode":
           if (
@@ -690,15 +611,12 @@ function awButtons(playobject) {
                 name: "aw-data-id",
                 value: node.getAttribute(playobject.id),
               });
-
               if (node.querySelector("h5 > a")) {
                 let link = node.querySelector("h5 > a").href;
-
                 attributes.push({
                   name: "aw-data-type",
                   value: playobject.type,
                 });
-
                 if (link.includes("/seasons")) {
                   attributes.push({
                     name: "aw-data-season",
@@ -717,7 +635,6 @@ function awButtons(playobject) {
                   value: "movies",
                 });
               }
-
               node.querySelector("h4").after(awBlock("schedule", attributes));
             }
           }
@@ -725,7 +642,6 @@ function awButtons(playobject) {
         default:
           const actionButtons = node.querySelectorAll(".action-buttons");
           const quickIcons = node.querySelectorAll(".quick-icons");
-
           for (let button of actionButtons) {
             if (
               !document
@@ -733,7 +649,6 @@ function awButtons(playobject) {
                 .parentElement.querySelector(".alternative-watch")
             ) {
               let link = document.querySelector("meta[itemprop=url]").content;
-
               attributes.push({
                 name: "aw-data-id",
                 value: button
@@ -744,7 +659,6 @@ function awButtons(playobject) {
                 name: "aw-data-type",
                 value: playobject.type,
               });
-
               if (link.includes("/seasons")) {
                 attributes.push({
                   name: "aw-data-season",
@@ -757,7 +671,6 @@ function awButtons(playobject) {
                   value: checkSepNum(link.split("/").pop()),
                 });
               }
-
               document
                 .querySelector(".btn-watch-now")
                 .parentNode.querySelector(".poster")
@@ -768,12 +681,10 @@ function awButtons(playobject) {
                 .append(awBlock("action-mobile", attributes));
             }
           }
-
           for (let icon of quickIcons) {
             if (!icon.parentElement.querySelector(".alternative-watch")) {
               let link =
                 icon.parentElement.querySelector("meta[itemprop=url]").content;
-
               attributes.push({
                 name: "aw-data-id",
                 value: icon.parentElement.getAttribute(playobject.id),
@@ -786,7 +697,6 @@ function awButtons(playobject) {
                 name: "aw-data-url",
                 value: icon.querySelector(".watch-now").dataset.url,
               });
-
               if (link.includes("/seasons")) {
                 attributes.push({
                   name: "aw-data-season",
@@ -799,7 +709,6 @@ function awButtons(playobject) {
                   value: checkSepNum(link.split("/").pop()),
                 });
               }
-
               icon.parentNode
                 .querySelector(".poster")
                 ?.append(awBlock("quick", attributes, getComputedStyle(icon)));
@@ -812,10 +721,8 @@ function awButtons(playobject) {
     }
   }, 500);
 }
-
 function awBlock(type, attributes, styles) {
   let block = document.createElement("button");
-
   block.tabIndex = "0";
   block.classList.add("aw-button");
   block.classList.add("alternative-watch");
@@ -824,14 +731,11 @@ function awBlock(type, attributes, styles) {
   block.style.backgroundColor = styles?.backgroundColor
     ? styles.backgroundColor
     : "#333";
-
   for (let attribute of attributes) {
     block.setAttribute(attribute.name, attribute.value);
   }
-
   block.onclick = (event) => {
     event.preventDefault();
-
     const closeModal = (modal) => {
       localStorage.setItem(
         `awLocalInfo_${aw_data.id}`,
@@ -849,9 +753,7 @@ function awBlock(type, attributes, styles) {
           episode: episodeLB.title.querySelector("span").textContent,
         })
       );
-
       modal.style.opacity = 0;
-
       setTimeout(function () {
         awModal.remove();
         aw_data.title = "";
@@ -865,18 +767,14 @@ function awBlock(type, attributes, styles) {
         episodeLB.clear();
         localInfo.clear();
       }, 500);
-
       block.focus();
     };
-
     let awModal = document.createElement("div");
     let awBlock = document.createElement("div");
     let awContent = document.createElement("div");
     let awHeader = document.createElement("div");
     let awFooter = document.createElement("div");
-
     awContent.tabIndex = "-1";
-
     awModal.classList.add("aw-modal");
     awBlock.classList.add("aw-block");
     awBlock.classList.add("aw-hidden");
@@ -886,32 +784,26 @@ function awBlock(type, attributes, styles) {
     awHeader.classList.add("aw-hidden");
     awFooter.classList.add("aw-footer");
     awFooter.classList.add("aw-hidden");
-
     awHeader.innerHTML = `
       <input type="text" class="aw-search-string" tabindex="0"/>
       <div class="aw-search-cbs"></div>
       <div class="aw-search-options"></div>
     `;
-
     document.querySelector("body").append(awModal);
     awModal.append(awBlock);
     awBlock.append(awContent);
     awContent.append(awHeader);
     awContent.append(awFooter);
-
     aw_data.id = block.getAttribute("aw-data-id");
     aw_data.type = block.getAttribute("aw-data-type");
     aw_data.season = block.getAttribute("aw-data-season");
     aw_data.episode = block.getAttribute("aw-data-episode");
-
     localInfo.get();
-
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
-
     languageLB.init(document.querySelector(".aw-search-options"));
     categoryLB.init(document.querySelector(".aw-search-options"));
     sourceLB.init(document.querySelector(".aw-search-options"));
@@ -921,59 +813,45 @@ function awBlock(type, attributes, styles) {
     sourceLB.update(sourcesTypes);
     seasonLB.update(["None"]);
     episodeLB.update(["None"]);
-
     updater();
     reqCall_Data();
-
     awBlock.classList.remove("aw-hidden");
     awHeader.classList.remove("aw-hidden");
-
     document.addEventListener("click", (e) => {
       e.target == awModal && closeModal(awModal);
     });
-
     document.addEventListener("keydown", (e) => {
       e.key == "Escape" && closeModal(awModal);
     });
   };
-
   return block;
 }
-
 function addSites() {
   const awFooter = document.querySelector(".aw-footer");
   const awSearchString = document.querySelector(".aw-search-string");
   const selectedLanguage = languageLB.title.querySelector("span").textContent;
   const selectedCategory = categoryLB.title.querySelector("span").textContent;
   const selectedSource = sourceLB.title.querySelector("span").textContent;
-
   awFooter.querySelector(".aw-sources")?.remove();
   awFooter.innerHTML += `<div class="aw-sources"/>`;
-
   const awSources = document.querySelector(".aw-sources");
   const sources = sourcesList
     .find((element) => element.name == selectedLanguage)
     .list.find((element) => element.name == selectedCategory)
     .list.find((element) => element.name == selectedSource).list;
-
   for (let source of sources) {
     let awLink = document.createElement("button");
     let awSourceName = document.createElement("div");
-
     awLink.classList.add("aw-link");
     awLink.classList.add("aw-button");
     awSourceName.classList.add("aw-source-name");
-
     awLink.dataset.awSpace = source.space || "%20";
     awLink.dataset.awSource = source.link;
     awSourceName.textContent = source.name;
-
     awLink.append(awSourceName);
     awSources.append(awLink);
   }
-
   const awLinks = document.querySelectorAll(".aw-link");
-
   for (let link of awLinks) {
     link.onclick = () => {
       window.open(
@@ -988,21 +866,16 @@ function addSites() {
     };
   }
 }
-
 function checkSepNum(n) {
   return (n < 10 ? "0" : "") + n;
 }
-
 function upFL(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
-
 //API Functions
-
 async function reqCall_Data() {
   const awContent = document.querySelector(".aw-content");
   const awFooter = document.querySelector(".aw-footer");
-
   const [traktInfoResponse, seasonInfoResponse] = await Promise.allSettled([
     fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}`, {
       method: "GET",
@@ -1017,7 +890,6 @@ async function reqCall_Data() {
         }
       ),
   ]);
-
   const traktInfo =
     traktInfoResponse.status == "fulfilled" &&
     traktInfoResponse.value &&
@@ -1026,23 +898,19 @@ async function reqCall_Data() {
     seasonInfoResponse.status == "fulfilled" &&
     seasonInfoResponse.value &&
     (await seasonInfoResponse.value.json());
-
   aw_data.type == "shows" && seasonInfo?.forEach((season) => {
     aw_data.seasons.push(checkSepNum(season.number));
   });
-
   aw_data.title = traktInfo.title;
   aliasLB.update([aw_data.title]);
   aw_data.year = traktInfo.year;
   aw_data.tmdb = traktInfo.ids.tmdb;
   reqCall_Aliases(aw_data.title);
   aw_data.type == "shows" && seasonInfo && seasonLB.update(aw_data.seasons);
-
   updater();
   awFooter.classList.remove("aw-hidden");
   awContent.focus();
 }
-
 async function reqCall_Aliases(title) {
   let titles = [];
   const [tmdbDataResponse, traktTitlesResponse, tmdbTitlesResponse] =
@@ -1066,7 +934,6 @@ async function reqCall_Aliases(title) {
         { method: "GET" }
       ),
     ]);
-
   const tmdbData =
     tmdbDataResponse.status == "fulfilled" &&
     (await tmdbDataResponse.value.json());
@@ -1076,19 +943,15 @@ async function reqCall_Aliases(title) {
   const tmdbTitles =
     tmdbTitlesResponse.status == "fulfilled" &&
     (await tmdbTitlesResponse.value.json());
-
   tmdbData?.original_name && titles.push(tmdbData.original_title);
   tmdbData?.original_title && titles.push(tmdbData.original_title);
   traktTitles?.forEach((item) => titles.push(item.title));
   tmdbTitles?.titles?.forEach((item) => titles.push(item.title));
   tmdbTitles?.results?.forEach((item) => titles.push(item.title));
-
   aliasLB.update(
     [...new Set(titles)].filter((element) => element && element != title)
   );
 }
-
 })();
-
 /******/ })()
 ;
