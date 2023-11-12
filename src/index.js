@@ -19,6 +19,9 @@ class LocalInfo {
     this.all = {};
     this.year;
     this.absolute;
+    this.hd;
+    this.fhd;
+    this.uhd;
     this.language;
     this.category;
     this.source;
@@ -32,6 +35,9 @@ class LocalInfo {
     if (this.all) {
       this.year = this.all.year
       this.absolute = this.all.absolute;
+      this.hd = this.all.hd;
+      this.fhd = this.all.fhd;
+      this.uhd = this.all.uhd;
       this.language = this.all.language;
       this.category = this.all.category;
       this.source = this.all.source;
@@ -45,6 +51,9 @@ class LocalInfo {
     this.all = {};
     this.year = null;
     this.absolute = null;
+    this.hd = null;
+    this.fhd = null;
+    this.uhd = null;
     this.language = null;
     this.category = null;
     this.source = null;
