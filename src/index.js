@@ -309,6 +309,10 @@ const aw_data = {
 const localInfo = new LocalInfo();
 const yearCB = new CB("year");
 const absoluteCB = new CB("absolute");
+const itaButton = new CB("ITA");
+const resolution720pButton = new CB("720p");
+const resolution1080pButton = new CB("1080p");
+const resolution2160pButton = new CB("2160p");
 const languageLB = new LB("language");
 const categoryLB = new LB("category");
 const sourceLB = new LB("source");
@@ -332,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Aggiunta dei listener per la gestione dell'esclusività
   resolution720pButton.block.addEventListener("click", () => {
-    if (!resolution1080pButton.disabled) {
+    if (!resolution720pButton.disabled) {
       resolution1080pButton.active = false;
       resolution2160pButton.active = false;
       resolution1080pButton.setStyles();
@@ -352,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   resolution2160pButton.block.addEventListener("click", () => {
-    if (!resolution1080pButton.disabled) {
+    if (!resolution2160pButton.disabled) {
       resolution720pButton.active = false;
       resolution1080pButton.active = false;
       resolution720pButton.setStyles();
@@ -377,19 +381,11 @@ function updater() {
   const changeSearchString = () => {
     let searchTerms = [selectedAlias ? selectedAlias : aw_data.title];
 
-    // Aggiungi la logica per i nuovi bottoni
-    if (itaButton.active) {
-      searchTerms.push("ITA");
-    }
-    if (resolution720pButton.active) {
-      searchTerms.push("720p");
-    }
-    if (resolution1080pButton.active) {
-      searchTerms.push("1080p");
-    }
-    if (resolution2160pButton.active) {
-      searchTerms.push("2160p");
-    }
+    if (itaButton.active) searchTerms.push("ITA");
+    if (resolution720pButton.active) searchTerms.push("720p");
+    if (resolution1080pButton.active) searchTerms.push("1080p");
+    if (resolution2160pButton.active) searchTerms.push("2160p");
+
     searchString.value = searchTerms.join(" ") + episodeInfo() + (yearCB.active ? " " + aw_data.year : "");
   };
 
