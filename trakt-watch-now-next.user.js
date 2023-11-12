@@ -303,18 +303,28 @@ class CB {
 }
 
 class ResolutionButton {
-    constructor(id, allButtons) {
+    constructor(id) {
         this.button = document.getElementById(id);
-        this.allButtons = allButtons;
         this.isSelected = false;
 
         // Aggiungi il listener per il click
         this.button.addEventListener('click', () => {
+            // Gestione della selezione
+            this.handleSelection();
+        });
+    }
+
+    handleSelection() {
+        if (!this.isSelected) {
             // Deseleziona tutti i bottoni
-            this.allButtons.forEach(btn => btn.deselect());
+            resolutionButtons.forEach(btn => {
+                if (btn !== this) {
+                    btn.deselect();
+                }
+            });
             // Seleziona questo bottone
             this.select();
-        });
+        }
     }
 
     select() {
@@ -332,14 +342,11 @@ class ResolutionButton {
     }
 }
 
-// Inizialmente crea un array vuoto
-const resolutionButtons = [];
-
-// Aggiungi ogni bottone all'array dopo che è stato creato
-resolutionButtons.push(new ResolutionButton('hdCB', resolutionButtons));
-resolutionButtons.push(new ResolutionButton('fhdCB', resolutionButtons));
-resolutionButtons.push(new ResolutionButton('uhdCB', resolutionButtons));
-
+const resolutionButtons = [
+    new ResolutionButton('hdCB'),
+    new ResolutionButton('fhdCB'),
+    new ResolutionButton('uhdCB')
+];
 
 class LB {
   constructor(type) {
