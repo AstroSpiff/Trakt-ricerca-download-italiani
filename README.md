@@ -20,7 +20,7 @@ Sono solo molti collegamenti di ricerca con opzioni flessibili.
 Raccomandato: TamperMonkey ([Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) oppure ViolentMonkey ([Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/))   
 Per dispositivi mobili:    
   - Installa AdGuard e usa il suo manager estensioni: [Android](https://adguard.com/en/adguard-android/overview.html), [iOS](https://adguard.com/en/adguard-ios/overview.html).
-  - Usa [ChromeXt](https://github.com/JingMatrix/ChromeXt) chrome browser per android.   
+  - Usa [ChromeXt](https://github.com/JingMatrix/ChromeXt) browser chrome per android.   
   - Use browser con supporto per le estensioni e installa su una qualsiasi estensione UserScript manager.
 + Seleziona lo script da questa repository, click su "Raw button" e conferma l'installazione.   
 Oppure usa questo link: [Install](https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js)   
