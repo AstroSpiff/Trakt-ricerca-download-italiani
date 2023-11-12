@@ -519,6 +519,10 @@ const aw_data = {
 
 const localInfo = new LocalInfo();
 const yearCB = new CB("year");
+const itaButton = new CB("ITA");
+const resolution720pButton = new CB("720p");
+const resolution1080pButton = new CB("1080p");
+const resolution2160pButton = new CB("2160p");
 const absoluteCB = new CB("absolute");
 const languageLB = new LB("language");
 const categoryLB = new LB("category");
@@ -536,6 +540,10 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let element of playItems) {
     awButtons(element);
   }
+  itaButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution720pButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution1080pButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution2160pButton.init("append", document.querySelector(".aw-search-cbs"));
 });
 
 //Functions
