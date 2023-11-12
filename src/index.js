@@ -816,7 +816,7 @@ async function reqCall_Aliases(title) {
       fetch(
         `https://api.themoviedb.org/3/${
           aw_data.type == "shows" ? "tv" : "movie"
-        }/${aw_data.tmdb}?api_key=${tmdbApiKey}&language=en-US`,
+        }/${aw_data.tmdb}?api_key=${tmdbApiKey}&language=it-IT`,
         { method: "GET" }
       ),
       fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}/aliases`, {
@@ -828,7 +828,7 @@ async function reqCall_Aliases(title) {
           aw_data.type == "shows" ? "tv" : "movie"
         }/${
           aw_data.tmdb
-        }/alternative_titles?api_key=${tmdbApiKey}&language=en-US`,
+        }/alternative_titles?api_key=${tmdbApiKey}&language=it-IT`,
         { method: "GET" }
       ),
     ]);
