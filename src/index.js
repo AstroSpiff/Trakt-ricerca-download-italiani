@@ -325,6 +325,11 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let element of playItems) {
     awButtons(element);
   }
+  itaButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution720pButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution1080pButton.init("append", document.querySelector(".aw-search-cbs"));
+  resolution2160pButton.init("append", document.querySelector(".aw-search-cbs"));
+
 });
 
 //Functions
