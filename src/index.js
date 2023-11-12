@@ -341,8 +341,8 @@ function updater() {
 
   const changeSearchString = () => {
     const episodeInfo = () => {
-      if (selectedSeason != "--") {
-        if (selectedEpisode != "--") {
+      if (selectedSeason != "None") {
+        if (selectedEpisode != "None") {
           if (absoluteCB.active) {
             return " " + selectedEpisode;
           } else {
@@ -381,10 +381,10 @@ function updater() {
     selectedSeason = seasonLB.title.querySelector("span").textContent;
   } else {
     seasonLB.remove();
-    selectedSeason = "--";
+    selectedSeason = "None";
   }
 
-  if (selectedSeason != "--" && seasonLB.isExist(searchOptions)) {
+  if (selectedSeason != "None" && seasonLB.isExist(searchOptions)) {
     episodeLB.init(searchOptions, aw_data.episode);
     selectedEpisode = episodeLB.title.querySelector("span").textContent;
     fetch(
@@ -400,12 +400,12 @@ function updater() {
       .then((data) => {
         let episodes = [];
         episodeLB.clear({ onlyOptions: true });
-        episodeLB.update(["--"]);
+        episodeLB.update(["None"]);
         data.forEach((episode) => {
           episodes.push(checkSepNum(episode.number));
         });
         episodeLB.update(episodes);
-        selectedEpisode != "--" &&
+        selectedEpisode != "None" &&
           !episodes.includes(selectedEpisode) &&
           episodeLB.setTitle(episodes[0]);
         selectedEpisode = episodeLB.title.querySelector("span").textContent;
@@ -414,7 +414,7 @@ function updater() {
       });
   } else {
     episodeLB.remove();
-    selectedEpisode = "--";
+    selectedEpisode = "None";
 
     changeSearchString();
   }
@@ -439,7 +439,7 @@ function updater() {
   );
 
   addSites();
-    absoluteCB.disabled = selectedEpisode == '--';
+    absoluteCB.disabled = selectedEpisode == 'None';
   absoluteCB.setStyles();
 }
 
@@ -685,8 +685,8 @@ function awBlock(type, attributes, styles) {
     languageLB.update(sourcesLanguages);
     categoryLB.update(sourcesCategories);
     sourceLB.update(sourcesTypes);
-    seasonLB.update(["--"]);
-    episodeLB.update(["--"]);
+    seasonLB.update(["None"]);
+    episodeLB.update(["None"]);
 
     updater();
     reqCall_Data();
