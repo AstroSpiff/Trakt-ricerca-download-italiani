@@ -459,12 +459,12 @@ class LB {
 
 const sourcesList = [
   {
-    name: "English",
-    list: english_sources_namespaceObject,
-  },
-  {
     name: "Italian",
     list: italian_sources_namespaceObject,
+  },
+  {
+    name: "English",
+    list: english_sources_namespaceObject,
   },
   {
     name: "Raw",
