@@ -11,6 +11,7 @@ const traktApiHeaders = {
   "trakt-api-version": "2",
   "trakt-api-key": traktApiKey,
 };
+
 class LocalInfo {
   constructor() {
     this.all = {};
@@ -57,6 +58,7 @@ class LocalInfo {
     this.episode = null;
   }
 }
+
 class CB {
   constructor(type) {
     this.type = type;
@@ -107,6 +109,45 @@ class CB {
     this.setStyles();
   }
 }
+
+class ResolutionButton {
+    constructor(id) {
+        this.button = document.getElementById(id);
+        this.isSelected = false;
+
+        // Aggiungi il listener per il click
+        this.button.addEventListener('click', () => {
+            this.toggleSelection();
+            resolutionButtons.forEach(btn => {
+                if (btn !== this && btn.isSelected) {
+                    btn.deselect();
+                }
+            });
+        });
+    }
+
+    toggleSelection() {
+        this.isSelected = !this.isSelected;
+        this.updateStyle();
+    }
+
+    deselect() {
+        this.isSelected = false;
+        this.updateStyle();
+    }
+
+    updateStyle() {
+        this.button.style.background = this.isSelected ? '#b110109e' : '#333333';
+    }
+}
+
+// Crea istanze dei bottoni
+const resolutionButtons = [
+    new ResolutionButton('hdCB'), // Assicurati che gli ID corrispondano
+    new ResolutionButton('fhdCB'),
+    new ResolutionButton('uhdCB')
+];
+
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
