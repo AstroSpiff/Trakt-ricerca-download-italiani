@@ -33,7 +33,7 @@ class LocalInfo {
   get() {
     this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
     if (this.all) {
-      this.year = this.all.year
+      this.year = this.all.year;
       this.absolute = this.all.absolute;
       this.hd = this.all.hd;
       this.fhd = this.all.fhd;
