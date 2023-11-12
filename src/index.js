@@ -247,12 +247,12 @@ class LB {
 
 const sourcesList = [
   {
-    name: "English",
-    list: englishSources,
-  },
-  {
     name: "Italian",
     list: italianSources,
+  },
+  {
+    name: "English",
+    list: englishSources,
   },
   {
     name: "Raw",
