@@ -23,7 +23,7 @@ For mobile devices:
   - Use [ChromeXt](https://github.com/JingMatrix/ChromeXt) for android chrome browser.   
   - Use browser with extensions support and install any UserScript manager through extension.
 + Select script from this repository, click on "Raw button" and confirm installation.   
-Or use this link: [Install](https://github.com/sergeyhist/trakt-watch-now-alternative/raw/main/trakt-watch-now-next.user.js)   
+Or use this link: [Install](https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js)   
 ### Screenshots
 <span>
 <img src="https://i.ibb.co/PhfM1V7/swappy-20230405-220137.png" height="500px" alt="Main window (online sources)"/>
