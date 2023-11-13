@@ -656,10 +656,6 @@ function awBlock(type, attributes, styles) {
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
-// Inserisci un elemento <br>
-    const breakLine = document.createElement("br");
-    document.querySelector(".aw-search-cbs").appendChild(breakLine);
-
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
