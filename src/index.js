@@ -640,7 +640,6 @@ function awBlock(type, attributes, styles) {
     awHeader.innerHTML = `
       <input type="text" class="aw-search-string" tabindex="0"/>
       <div class="aw-search-cbs"></div>
-      <div class="aw-search-rbs"></div>
       <div class="aw-search-options"></div>
     `;
     document.querySelector("body").append(awModal);
@@ -657,13 +656,9 @@ function awBlock(type, attributes, styles) {
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
-// Inserisci un elemento <br>
-    const breakLine = document.createElement("br");
-    document.querySelector(".aw-search-cbs").appendChild(breakLine);
-
-    hdCB.init("append", document.querySelector(".aw-search-rbs"));
-    fhdCB.init("append", document.querySelector(".aw-search-rbs"));
-    uhdCB.init("append", document.querySelector(".aw-search-rbs"));
+    hdCB.init("append", document.querySelector(".aw-search-cbs"));
+    fhdCB.init("append", document.querySelector(".aw-search-cbs"));
+    uhdCB.init("append", document.querySelector(".aw-search-cbs"));
     
     languageLB.init(document.querySelector(".aw-search-options"));
     categoryLB.init(document.querySelector(".aw-search-options"));
