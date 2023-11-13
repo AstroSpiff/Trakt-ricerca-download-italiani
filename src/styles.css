@@ -238,6 +238,26 @@ div[class^="aw-"] {
   filter: contrast(1.4);
 }
 
+.aw-search-rbs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.aw-search-rb {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.aw-search-rb:focus-visible { 
+  filter: contrast(1.4);
+}
+
+
 .aw-hidden {
   transform: scaleY(0)!important;
   max-height: 0!important;
