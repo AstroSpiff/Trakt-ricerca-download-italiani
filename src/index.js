@@ -293,9 +293,9 @@ const localInfo = new LocalInfo();
 const yearCB = new CB("anno");
 const itaCB = new CB("ITA");
 const absoluteCB = new CB("assoluto");
-const hdCB = new CB("720p");
-const fhdCB = new CB("1080p");
-const uhdCB = new CB("2160p");
+const hdRB = new RB("720p");
+const fhdRB = new RB("1080p");
+const uhdRB = new RB("2160p");
 const languageLB = new LB("lingua");
 const categoryLB = new LB("categora");
 const sourceLB = new LB("sorgente");
@@ -313,37 +313,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Gestore di eventi per il bottone 720p
-hdCB.block.addEventListener("click", () => {
-  if (!hdCB.disabled) {
-    fhdCB.active = false;
-    uhdCB.active = false;
+hdRB.block.addEventListener("click", () => {
+  if (!hdRB.disabled) {
+    fhdRB.active = false;
+    uhdRB.active = false;
     // Aggiorna gli stili per riflettere lo stato attivo/disattivo
-    fhdCB.setStyles();
-    uhdCB.setStyles();
+    fhdRB.setStyles();
+    uhdRB.setStyles();
     updater();
   }
 });
 
 // Gestore di eventi per il bottone 1080p
-fhdCB.block.addEventListener("click", () => {
-  if (!fhdCB.disabled) {
-    hdCB.active = false;
-    uhdCB.active = false;
+fhdRB.block.addEventListener("click", () => {
+  if (!fhdRB.disabled) {
+    hdRB.active = false;
+    uhdRB.active = false;
     // Aggiorna gli stili
-    hdCB.setStyles();
-    uhdCB.setStyles();
+    hdRB.setStyles();
+    uhdRB.setStyles();
     updater();
   }
 });
 
 // Gestore di eventi per il bottone 2160p
-uhdCB.block.addEventListener("click", () => {
-  if (!uhdCB.disabled) {
-    hdCB.active = false;
-    fhdCB.active = false;
+uhdRB.block.addEventListener("click", () => {
+  if (!uhdRB.disabled) {
+    hdRB.active = false;
+    fhdRB.active = false;
     // Aggiorna gli stili
-    hdCB.setStyles();
-    fhdCB.setStyles();
+    hdRB.setStyles();
+    fhdRB.setStyles();
     updater();
   }
 });
@@ -380,9 +380,9 @@ function updater() {
       episodeInfo() +
       (yearCB.active ? " " + aw_data.year : "") + 
       (itaCB.active ? " ITA" : "") + 
-      (hdCB.active ? " 720p" : "") + 
-      (fhdCB.active ? " 1080p" : "") + 
-      (uhdCB.active ? " 2160p" : "");
+      (hdRB.active ? " 720p" : "") + 
+      (fhdRB.active ? " 1080p" : "") + 
+      (uhdRB.active ? " 2160p" : "");
   };
   const optionsCheck = (title, options, checkArray) => {
     for (let option of options) {
@@ -604,9 +604,9 @@ function awBlock(type, attributes, styles) {
           year: yearCB.active.toString(),
           ITA: itaCB.active.toString(),
           absolute: absoluteCB.active.toString(),
-          hd: hdCB.active.toString(),
-          fhd: fhdCB.active.toString(),
-          uhd: uhdCB.active.toString(),
+          hd: hdRB.active.toString(),
+          fhd: fhdRB.active.toString(),
+          uhd: uhdRB.active.toString(),
           language: languageLB.title.querySelector("span").textContent,
           category: categoryLB.title.querySelector("span").textContent,
           source: sourceLB.title.querySelector("span").textContent,
@@ -649,6 +649,7 @@ function awBlock(type, attributes, styles) {
     awHeader.innerHTML = `
       <input type="text" class="aw-search-string" tabindex="0"/>
       <div class="aw-search-cbs"></div>
+      <div class="aw-search-rbs"></div>
       <div class="aw-search-options"></div>
     `;
     document.querySelector("body").append(awModal);
@@ -665,9 +666,9 @@ function awBlock(type, attributes, styles) {
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
-    hdCB.init("append", document.querySelector(".aw-search-cbs"));
-    fhdCB.init("append", document.querySelector(".aw-search-cbs"));
-    uhdCB.init("append", document.querySelector(".aw-search-cbs"));
+    hdRB.init("append", document.querySelector(".aw-search-rbs"));
+    fhdRB.init("append", document.querySelector(".aw-search-rbs"));
+    uhdRB.init("append", document.querySelector(".aw-search-rbs"));
     
     languageLB.init(document.querySelector(".aw-search-options"));
     categoryLB.init(document.querySelector(".aw-search-options"));
