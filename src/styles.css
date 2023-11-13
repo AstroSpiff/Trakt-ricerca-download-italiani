@@ -257,7 +257,6 @@ div[class^="aw-"] {
   filter: contrast(1.4);
 }
 
-
 .aw-hidden {
   transform: scaleY(0)!important;
   max-height: 0!important;
