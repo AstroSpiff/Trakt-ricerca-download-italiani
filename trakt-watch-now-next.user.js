@@ -830,6 +830,7 @@ function awBlock(type, attributes, styles) {
     awHeader.innerHTML = `
       <input type="text" class="aw-search-string" tabindex="0"/>
       <div class="aw-search-cbs"></div>
+      <div class="aw-search-rbs"></div>
       <div class="aw-search-options"></div>
     `;
     document.querySelector("body").append(awModal);
