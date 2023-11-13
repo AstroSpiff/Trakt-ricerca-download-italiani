@@ -11,7 +11,6 @@ const traktApiHeaders = {
   "trakt-api-version": "2",
   "trakt-api-key": traktApiKey,
 };
-
 class LocalInfo {
   constructor() {
     this.all = {};
@@ -61,7 +60,6 @@ class LocalInfo {
     this.episode = null;
   }
 }
-
 class CB {
   constructor(type) {
     this.type = type;
@@ -112,7 +110,6 @@ class CB {
     this.setStyles();
   }
 }
-
 class LB {
   constructor(type) {
     (this.type = type), (this.searchOption = document.createElement("div"));
@@ -135,7 +132,6 @@ class LB {
       e.key == "Enter" && this.#toggleList(e);
     });
   }
-
   #toggleList(event) {
     if (
       !this.searchOption.contains(event.target) ||
@@ -311,7 +307,6 @@ document.addEventListener("DOMContentLoaded", () => {
     awButtons(element);
   }
 });
-
 // Gestore di eventi per il bottone 720p
 hdCB.block.addEventListener("click", () => {
   if (!hdCB.disabled) {
@@ -323,7 +318,6 @@ hdCB.block.addEventListener("click", () => {
     updater();
   }
 });
-
 // Gestore di eventi per il bottone 1080p
 fhdCB.block.addEventListener("click", () => {
   if (!fhdCB.disabled) {
@@ -335,7 +329,6 @@ fhdCB.block.addEventListener("click", () => {
     updater();
   }
 });
-
 // Gestore di eventi per il bottone 2160p
 uhdCB.block.addEventListener("click", () => {
   if (!uhdCB.disabled) {
@@ -347,9 +340,7 @@ uhdCB.block.addEventListener("click", () => {
     updater();
   }
 });
-
 //Functions
-
 function updater() {
   const searchString = document.querySelector(".aw-search-string");
   const searchOptions = document.querySelector(".aw-search-options");
@@ -661,10 +652,14 @@ function awBlock(type, attributes, styles) {
     aw_data.season = block.getAttribute("aw-data-season");
     aw_data.episode = block.getAttribute("aw-data-episode");
     localInfo.get();
-    
+
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
+// Inserisci un elemento <br>
+    const breakLine = document.createElement("br");
+    document.querySelector(".aw-search-cbs").appendChild(breakLine);
+
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
