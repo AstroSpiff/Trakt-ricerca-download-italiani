@@ -655,8 +655,13 @@ function awBlock(type, attributes, styles) {
     aw_data.season = block.getAttribute("aw-data-season");
     aw_data.episode = block.getAttribute("aw-data-episode");
     localInfo.get();
+    
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
+// Inserisci un elemento <br>
+    const breakLine = document.createElement("br");
+    document.querySelector(".aw-search-cbs").appendChild(breakLine);
+    
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
