@@ -499,6 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
     awButtons(element);
   }
 });
+
   
 // Gestore di eventi per il bottone 720p
 hdCB.block.addEventListener("click", () => {
