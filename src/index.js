@@ -16,6 +16,7 @@ class LocalInfo {
   constructor() {
     this.all = {};
     this.year;
+    this.ita;
     this.absolute;
     this.hd;
     this.fhd;
@@ -31,6 +32,7 @@ class LocalInfo {
     this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
     if (this.all) {
       this.year = this.all.year;
+      this.ita = this.all.ita;
       this.absolute = this.all.absolute;
       this.hd = this.all.hd;
       this.fhd = this.all.fhd;
@@ -46,6 +48,7 @@ class LocalInfo {
   clear() {
     this.all = {};
     this.year = null;
+    this.ita = null;
     this.absolute = null;
     this.hd = null;
     this.fhd = null;
@@ -288,6 +291,7 @@ const aw_data = {
 };
 const localInfo = new LocalInfo();
 const yearCB = new CB("anno");
+const itaCB = new CB("ITA");
 const absoluteCB = new CB("assoluto");
 const hdCB = new CB("720p");
 const fhdCB = new CB("1080p");
@@ -375,6 +379,7 @@ function updater() {
       (selectedAlias ? selectedAlias : aw_data.title) +
       episodeInfo() +
       (yearCB.active ? " " + aw_data.year : "") + 
+      (itaCB.active ? " ITA" : "") + 
       (hdCB.active ? " 720p" : "") + 
       (fhdCB.active ? " 1080p" : "") + 
       (uhdCB.active ? " 2160p" : "");
@@ -597,6 +602,7 @@ function awBlock(type, attributes, styles) {
         `awLocalInfo_${aw_data.id}`,
         JSON.stringify({
           year: yearCB.active.toString(),
+          ITA: itaCB.active.toString(),
           absolute: absoluteCB.active.toString(),
           hd: hdCB.active.toString(),
           fhd: fhdCB.active.toString(),
@@ -657,11 +663,8 @@ function awBlock(type, attributes, styles) {
     localInfo.get();
     
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
+    itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
-// Inserisci un elemento <br>
-    const breakLine = document.createElement("br");
-    document.querySelector(".aw-search-cbs").appendChild(breakLine);
-    
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
