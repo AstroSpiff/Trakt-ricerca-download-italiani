@@ -262,7 +262,7 @@ class CB {
     this.label = document.createElement("span");
     this.label.textContent = upFL(type);
     this.block = document.createElement("div");
-    this.block.classList.add("aw-search-cb", "aw-search-rb", "aw-unselectable");
+    this.block.classList.add("aw-search-cb", "aw-unselectable");
     this.block.id = `aw-${type}`;
     this.block.tabIndex = '0';
     this.block.append(this.label);
