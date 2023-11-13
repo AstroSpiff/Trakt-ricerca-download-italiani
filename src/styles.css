@@ -225,6 +225,12 @@ div[class^="aw-"] {
   gap: 20px;
 }
 
+.aw-search-cbs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .aw-search-cb {
   display: flex;
   padding: 5px 10px;
