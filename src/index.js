@@ -652,14 +652,12 @@ function awBlock(type, attributes, styles) {
     aw_data.season = block.getAttribute("aw-data-season");
     aw_data.episode = block.getAttribute("aw-data-episode");
     localInfo.get();
-
     yearCB.init("append", document.querySelector(".aw-search-cbs"));
     itaCB.init("append", document.querySelector(".aw-search-cbs"));
     absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
     hdCB.init("append", document.querySelector(".aw-search-cbs"));
     fhdCB.init("append", document.querySelector(".aw-search-cbs"));
     uhdCB.init("append", document.querySelector(".aw-search-cbs"));
-    
     languageLB.init(document.querySelector(".aw-search-options"));
     categoryLB.init(document.querySelector(".aw-search-options"));
     sourceLB.init(document.querySelector(".aw-search-options"));
