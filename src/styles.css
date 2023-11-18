@@ -227,7 +227,6 @@ div[class^="aw-"] {
 
 .aw-search-cb {
   display: flex;
-  float: left;
   padding: 5px 10px;
   align-items: center;
   justify-content: center;
