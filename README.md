@@ -3,10 +3,10 @@
 Sono solo molti collegamenti di ricerca con opzioni flessibili.   
 ### Features
 + Varie fonti:
-  - Online
   - DDL
   - Torrent
   - Database
+  - Online
 + Opzioni di ricerca:
   - Alias
   - Stagioni/Episodi info
@@ -21,9 +21,9 @@ Raccomandato: TamperMonkey ([Chrome](https://chrome.google.com/webstore/detail/t
 Per dispositivi mobili:    
   - Installa AdGuard e usa il suo manager estensioni: [Android](https://adguard.com/en/adguard-android/overview.html), [iOS](https://adguard.com/en/adguard-ios/overview.html).
   - Usa [ChromeXt](https://github.com/JingMatrix/ChromeXt) browser chrome per android.   
-  - Use browser con supporto per le estensioni e installa su una qualsiasi estensione UserScript manager.
+  - Usa browser con supporto per le estensioni e installa su una qualsiasi estensione UserScript manager.
 + Seleziona lo script da questa repository, click su "Raw button" e conferma l'installazione.   
-Oppure usa questo link: [Install](https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js)   
+Oppure usa questo link: [Installa](https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js)   
 ### Screenshots
 <span>
 <img src="https://i.ibb.co/PhfM1V7/swappy-20230405-220137.png" height="500px" alt="Main window (online sources)"/>
