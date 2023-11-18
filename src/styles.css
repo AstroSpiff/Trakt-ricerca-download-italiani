@@ -221,17 +221,12 @@ div[class^="aw-"] {
 
 .aw-search-cbs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
-
 .aw-search-cb {
-  display: flex;
-  padding: 5px 10px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  width: 100%;
+    padding: 2.2%;
+    border-radius: 3px;
 }
 
 .aw-search-cb:focus-visible { 
