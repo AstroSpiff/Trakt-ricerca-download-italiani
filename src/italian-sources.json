@@ -43,12 +43,40 @@
         "name": "DDL",
         "list": [
           {
-            "name": "Paradiso Italiano",
-            "link": "https://italyparadiso.com/index.php?do=search&subaction=search&search_start=0&full_search=0&story=%s"
+            "name": "DDL Village",
+            "link": "https://laforestaincantata.org/index.php?do=search&subaction=search&story=%s"
           },
           {
-            "name": "FILMHDCITY",
-            "link": "https://filmhdcity.com/f/name=%s"
+            "name": "DDN Crew",
+            "link": "https://www.hditaliabits.online/index.php?do=search&subaction=search&story=%s"
+          },
+          {
+            "name": "Paradiso Italiano",
+            "link": "https://italyparadiso.com/index.php?do=search&subaction=search&story=%s"
+          },
+          {
+            "name": "Club News",
+            "link": "https://clubnews.biz/index.php?do=search&subaction=search&story=%s"
+          },
+          {
+            "name": "DDL Italia",
+            "link": "https://www.ddlitalia.biz/index.php?do=search&subaction=search&story=%s"
+          },
+          {
+            "name": "CTRL HITS",
+            "link": "https://ctrlhits.online/index.php?do=search&subaction=search&story=%s"
+          },
+          {
+            "name": "DDL Stream  Italy",
+            "link": "https://ddlstreamitaly.co/search/?q=%s"
+          },
+          {
+            "name": "Roy Batty HD",
+            "link": "https://roybattyhd.blogspot.com/search?q=%s"
+          },
+            {
+            "name": "Lost Planet",
+            "link": "https://lostplanet.online//index.php?do=search&subaction=search&story=%s"
           }
         ]
       },
