@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name        Trakt - ricerca download italiani e integrazione IMDb, Jellyseerr, Overseerr
+// @name        Trakt - ricerca download italiani
 // @namespace   https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/blob/main/trakt-watch-now-next.user.js
 // @match       *://trakt.tv/*
-// @version     4.6.4
+// @version     4.6.3
 // @author      Hist
-// @description Alternative version for trakt.tv watch now modal with IMDb, Jellyseerr, and Overseerr integration
+// @description Alternative version for trakt.tv watch now modal
 // @run-at      document-start
 // @downloadURL https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js
 // @updateURL   https://github.com/AstroSpiff/Trakt-ricerca-download-italiani/raw/main/trakt-watch-now-next.user.js
@@ -13,7 +13,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
 /***/ 447:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -23,10 +22,13 @@
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(645);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* CSS LOADER CONTENT */
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("div[class^=aw-]{transform-origin:top;transition:.3s}.aw-search-string,.aw-button,div[class^=aw-]:focus-visible{border:0;outline:0}.aw-modal{position:fixed;z-index:100000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.9)}.aw-block{position:fixed;display:flex;flex-direction:column;top:10%;left:50%;transform:translate(-50%);width:90%;max-width:400px;max-height:80%;color:#fff;background-color:#1d1d1d;border:1px solid #000;border-radius:3px;font-family:proxima nova}.aw-type{display:grid;gap:2px;grid-template-columns:1fr 1fr;border-bottom:1px solid #000}.aw-content{max-height:100%}.aw-header{display:grid;gap:20px;padding:20px}.aw-footer{display:grid;background:#161616}.aw-button{background-color:rgba(177,16,16,.6196078431);transition:.5s}.aw-button:hover,.aw-button:focus,.aw-button:focus-visible,.aw-button-selected{background-color:#9e3131 !important}.aw-content,.aw-select{overflow:hidden;overflow-y:auto;overscroll-behavior:contain}.aw-search-string{background-color:#333;text-align:center;font-size:16px;white-space:nowrap;border-radius:3px;padding-inline:7px;overflow:hidden;text-overflow:ellipsis}.aw-search-options{display:grid;align-items:center;row-gap:10px;grid-template-columns:80px 1fr}.aw-search-option{display:grid;line-height:28px;font-size:14px}.aw-search-option:focus-visible>.aw-title{background-color:#161616}.aw-label{align-self:baseline;margin-top:3px}.aw-title{display:flex;align-items:center;justify-content:space-between;background:#333;border-radius:3px;padding-inline:7px;cursor:pointer;white-space:nowrap;overflow:hidden;height:28px}.aw-title>span:first-child{overflow:hidden;text-overflow:ellipsis}.aw-select{display:grid;padding:5px;max-height:190px;background:#333;border-radius:0 0 3px 3px}.aw-option{margin-top:2px;padding-inline:7px;cursor:pointer;background:#161616;border-radius:3px}.aw-option:hover,.aw-option:focus-visible{background:#6c6c6c}.aw-sources{display:flex;flex-direction:column;padding:20px;gap:10px}.aw-link{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:50px;font-size:13px;border:1px solid #000;border-radius:3px}.alternative-watch{display:flex;gap:10px;position:absolute;align-items:center;justify-content:center;transition:.5s;color:#fff;padding-inline:10px;box-shadow:0 0 10px #000;border-radius:3px 0 0 0;bottom:0;right:0;height:40px;width:40px;max-height:30%;max-width:40%;font-size:1.7em;opacity:.8}.alternative-watch-action{top:0;height:30px;width:100%;max-width:100%;border-radius:0;border-bottom:1px solid #000}.alternative-watch-action-mobile{height:100%;max-height:100%;width:100%;max-width:100%;border-radius:0;opacity:.7}.alternative-watch-schedule{border-radius:3px;position:initial;margin-bottom:5px;height:18px;width:fit-content;max-width:100%;padding-inline:1px 5px;font-size:1.2em;padding-top:2px}.alternative-watch-action::after,.alternative-watch-schedule::after{content:\"Watch Now\";font-size:13px;font-weight:bold;padding-top:2px}.aw-search-cbs{display:flex;gap:10px;flex-wrap:nowrap;}.aw-search-cb{padding:2.2%;border-radius:3px;}.aw-search-cb:focus-visible{filter:contrast(1.4)}.aw-hidden{transform:scaleY(0) !important;max-height:0 !important;opacity:0 !important;visibility:hidden !important;border:0 !important;outline:0 !important;margin:0 !important;padding:0 !important}.aw-unselectable{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}");
+// Imports
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "div[class^=aw-]{transform-origin:top;transition:.3s}.aw-search-string,.aw-button,div[class^=aw-]:focus-visible{border:0;outline:0}.aw-modal{position:fixed;z-index:100000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.9)}.aw-block{position:fixed;display:flex;flex-direction:column;top:10%;left:50%;transform:translate(-50%);width:90%;max-width:400px;max-height:80%;color:#fff;background-color:#1d1d1d;border:1px solid #000;border-radius:3px;font-family:proxima nova}.aw-type{display:grid;gap:2px;grid-template-columns:1fr 1fr;border-bottom:1px solid #000}.aw-content{max-height:100%}.aw-header{display:grid;gap:20px;padding:20px}.aw-footer{display:grid;background:#161616}.aw-button{background-color:rgba(177,16,16,.6196078431);transition:.5s}.aw-button:hover,.aw-button:focus,.aw-button:focus-visible,.aw-button-selected{background-color:#9e3131 !important}.aw-content,.aw-select{overflow:hidden;overflow-y:auto;overscroll-behavior:contain}.aw-search-string{background-color:#333;text-align:center;font-size:16px;white-space:nowrap;border-radius:3px;padding-inline:7px;overflow:hidden;text-overflow:ellipsis}.aw-search-options{display:grid;align-items:center;row-gap:10px;grid-template-columns:80px 1fr}.aw-search-option{display:grid;line-height:28px;font-size:14px}.aw-search-option:focus-visible>.aw-title{background-color:#161616}.aw-label{align-self:baseline;margin-top:3px}.aw-title{display:flex;align-items:center;justify-content:space-between;background:#333;border-radius:3px;padding-inline:7px;cursor:pointer;white-space:nowrap;overflow:hidden;height:28px}.aw-title>span:first-child{overflow:hidden;text-overflow:ellipsis}.aw-select{display:grid;padding:5px;max-height:190px;background:#333;border-radius:0 0 3px 3px}.aw-option{margin-top:2px;padding-inline:7px;cursor:pointer;background:#161616;border-radius:3px}.aw-option:hover,.aw-option:focus-visible{background:#6c6c6c}.aw-sources{display:flex;flex-direction:column;padding:20px;gap:10px}.aw-link{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:50px;font-size:13px;border:1px solid #000;border-radius:3px}.alternative-watch{display:flex;gap:10px;position:absolute;align-items:center;justify-content:center;transition:.5s;color:#fff;padding-inline:10px;box-shadow:0 0 10px #000;border-radius:3px 0 0 0;bottom:0;right:0;height:40px;width:40px;max-height:30%;max-width:40%;font-size:1.7em;opacity:.8}.alternative-watch-action{top:0;height:30px;width:100%;max-width:100%;border-radius:0;border-bottom:1px solid #000}.alternative-watch-action-mobile{height:100%;max-height:100%;width:100%;max-width:100%;border-radius:0;opacity:.7}.alternative-watch-schedule{border-radius:3px;position:initial;margin-bottom:5px;height:18px;width:fit-content;max-width:100%;padding-inline:1px 5px;font-size:1.2em;padding-top:2px}.alternative-watch-action::after,.alternative-watch-schedule::after{content:\"Watch Now\";font-size:13px;font-weight:bold;padding-top:2px}.aw-search-cbs{display:flex;gap:10px;flex-wrap:nowrap;}.aw-search-cb{padding:2.2%;border-radius:3px;}.aw-search-cb:focus-visible{filter:contrast(1.4)}.aw-hidden{transform:scaleY(0) !important;max-height:0 !important;opacity:0 !important;visibility:hidden !important;border:0 !important;outline:0 !important;margin:0 !important;padding:0 !important}.aw-unselectable{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 /***/ }),
-
 /***/ 645:
 /***/ ((module) => {
 /*
@@ -111,14 +113,12 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 /***/ }),
-
 /***/ 81:
 /***/ ((module) => {
 module.exports = function (i) {
   return i[1];
 };
 /***/ })
-
 /******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
@@ -179,993 +179,824 @@ module.exports = function (i) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-; // CONCATENATED MODULE: ./src/italian-sources.json
+;// CONCATENATED MODULE: ./src/italian-sources.json
 const italian_sources_namespaceObject = JSON.parse('[{"name":"Generale","list":[{"name":"Torrent","list":[{"name":"Prowlarr","link":"https://redprimerose-prowlarr.cp07.cloudboxes.io/search?query=%s"},{"name":"IlCorsaroNero","link":"https://ilcorsaronero.link/argh.php?search=%s"},{"name":"BTDigg","link":"https://btdig.com/search?q=%s"},{"name":"1337x","link":"https://1337x.to/search/%s/1/"},{"name":"SolidTorrents","link":"https://solidtorrents.net/search?q=%s"},{"name":"TorrentGalaxy","link":"https://torrentgalaxy.to/torrents.php?c9=1&c3=1&c46=1&c45=1&c42=1&c4=1&c1=1&c25=1&c41=1&c5=1&c6=1&c7=1&search=%s&lang=0&nox=2#results"},{"name":"Torrents.csv","link":"https://torrents-csv.ml/search/%s?"},{"name":"ThePirateBay","link":"https://thepiratebay.org/search/%s/0/3/0"}]},{"name":"DDL","list":[{"name":"DDLVillage","link":"https://laforestaincantata.org/index.php?do=search&subaction=search&story=%s"},{"name":"DDNCrew","link":"https://www.hditaliabits.online/index.php?do=search&subaction=search&story=%s"},{"name":"Impero dei sogni","link":"https://imperodeisogni.com/index.php?do=search&subaction=search&story=%s"},{"name":"ClubNews","link":"https://clubnews.biz/index.php?do=search&subaction=search&story=%s"},{"name":"DDLItalia","link":"https://www.ddlitalia.biz/index.php?do=search&subaction=search&story=%s"},{"name":"CTRLHITS","link":"https://ctrlhits.online/index.php?do=search&subaction=search&story=%s"},{"name":"DDLStreamItaly","link":"https://ddlstreamitaly.co/search/?q=%s"},{"name":"RoyBattyHD","link":"https://roybattyhd.blogspot.com/search?q=%s"},{"name":"LostPlanet","link":"https://lostplanet.online//index.php?do=search&subaction=search&story=%s"}]},{"name":"Database","list":[]}]},{"name":"Anime","list":[{"name":"Online","list":[]},{"name":"Torrent","list":[]},{"name":"Database","list":[]}]},{"name":"AsianDrama","list":[{"name":"Online","list":[]},{"name":"Online","list":[]}]}]');
-; // CONCATENATED MODULE: ./src/english-sources.json
+;// CONCATENATED MODULE: ./src/english-sources.json
 const english_sources_namespaceObject = JSON.parse('[{"name":"General","list":[{"name":"Online","list":[{"name":"Youtube","link":"https://www.youtube.com/results?search_query=%s"},{"name":"Himovies","link":"https://www5.himovies.to/search/%s","space":"-"},{"name":"Sflix.to","link":"https://sflix.to/search/%s","space":"-"},{"name":"Openload Movies","link":"https://openloadmov.net/?s=%s"},{"name":"LookMovie-Movies","link":"https://lookmovie2.to/movies/search/?q=%s"},{"name":"LookMovie-Shows","link":"https://lookmovie2.to/shows/search/?q=%s"},{"name":"C1ne","link":"https://c1ne.co/?s=%s"},{"name":"Rarefilmm","link":"https://rarefilmm.com/?s=%s"},{"name":"SolarMovie","link":"https://www2.solarmovie.to/search.html?q=%s","space":"-"},{"name":"M4uFree","link":"https://ww2.m4ufree.com/search/%s.html","space":"-"}]},{"name":"Torrent","list":[{"name":"1337x","link":"https://1337x.to/search/%s/1/"},{"name":"SolidTorrents","link":"https://solidtorrents.net/search?q=%s"},{"name":"TorrentGalaxy","link":"https://torrentgalaxy.to/torrents.php?c9=1&c3=1&c46=1&c45=1&c42=1&c4=1&c1=1&c25=1&c41=1&c5=1&c6=1&c7=1&search=%s&lang=0&nox=2#results"},{"name":"Torrents.csv","link":"https://torrents-csv.ml/search/%s?"},{"name":"CinemaZ","link":"https://cinemaz.to/torrents?in=1&search=%s"},{"name":"The Pirate Bay","link":"https://thepiratebay.org/search/%s/0/3/0"},{"name":"MVGroup","link":"https://forums.mvgroup.org/maintracker.php?forums=all&filter=%s&x=0&y=0&searchwhere=on"},{"name":"Psarips","link":"https://psa.pm/?s=%s"}]},{"name":"DDL","list":[{"name":"HDEncode","link":"https://hdencode.com/?s=%s"},{"name":"RLSBB","link":"http://search.rlsbb.ru/?s=%s"},{"name":"Scene-Rls","link":"http://scene-rls.com/?s=%s"},{"name":"2DDL","link":"https://2ddl.ms/?q=%s"},{"name":"RapidMoviez","link":"http://rmz.cr/search/%s"},{"name":"MegaDDL","link":"https://megaddl.co/?s=%s"},{"name":"MovieParadise","link":"https://movieparadise.org/?s=%s"},{"name":"DDLValley","link":"https://www.ddlvalley.me/search/%s"},{"name":"Psarips","link":"https://psa.pm/?s=%s"},{"name":"Rarefilmm","link":"https://rarefilmm.com/?s=%s"},{"name":"Pahe.in","link":"https://pahe.li/?s=%s"}]},{"name":"Database","list":[{"name":"IMDB","link":"https://www.imdb.com/find?s=tt&q=%s&ref_=nv_sr_sm"},{"name":"TheMovieDB","link":"https://www.themoviedb.org/search?query=%s"},{"name":"TheTVDB","link":"https://thetvdb.com/search?query=%s"}]}]},{"name":"Anime","list":[{"name":"Online","list":[{"name":"GoGoAnime","link":"https://www1.gogoanime.bid/search.html?keyword=%s"},{"name":"Zoro.to","link":"https://zoro.to/search?keyword=%s"},{"name":"AnimeFox","link":"https://animefox.to/search?keyword=%s","space":"+"},{"name":"PactedAnime","link":"https://pactedanime.com/?s=%s","space":"+"}]},{"name":"Torrent","list":[{"name":"Nyaa","link":"https://nyaa.si/?f=0&c=1_2&q=%s","space":"+"},{"name":"Anidex","link":"https://anidex.info/?q=%s"},{"name":"ShanaProject","link":"https://www.shanaproject.com/search/?title=%s"}]},{"name":"DDL","list":[{"name":"AnimeKaizoku","link":"https://animekaizoku.com/?s=%s"},{"name":"Hi10Anime","link":"https://hi10anime.com/?s=%s"},{"name":"AniDL","link":"https://anidl.org/?s=%s"},{"name":"AnimeKayo","link":"https://animekayo.com/?s=%s"},{"name":"Pahe.in","link":"https://pahe.li/?s=%s"}]},{"name":"Database","list":[{"name":"AniList","link":"https://anilist.co/search/anime?search=%s&sort=SEARCH_MATCH"},{"name":"MyAnimeList","link":"https://myanimelist.net/anime.php?q=%s&cat=anime"},{"name":"AniDB","link":"https://anidb.net/anime/?adb.search=%s&do.search=1"}]}]},{"name":"Asian Drama","list":[{"name":"Online","list":[{"name":"Dramacool","link":"https://dramacool.so/search?section=movies&keyword=%s"},{"name":"KissAsian","link":"https://kissasian.la/?s=%s"},{"name":"Dramanice","link":"https://dramanice.so//search.html?keyword=%s"},{"name":"DramaHood","link":"https://kdramahood.com/?s=%s"},{"name":"TDrama","link":"http://tdrama.net/search/?id=%s"},{"name":"MyAsianTV","link":"https://www3.myasiantv.cc/search.html?key=%s","space":"+"}]},{"name":"Torrent","list":[{"name":"Nyaa","link":"https://nyaa.si/?f=0&c=4_1&q=%s","space":"+"},{"name":"AvistaZ","link":"https://avistaz.to/torrents?in=1&search=%s"}]},{"name":"DDL","list":[{"name":"Pahe.in","link":"https://pahe.li/?s=%s"},{"name":"MkvDrama","link":"https://mkvdrama.com/?s=%s"},{"name":"TDrama","link":"http://tdrama.net/search/?id=%s"},{"name":"MyAsianTV","link":"https://www3.myasiantv.cc/search.html?key=%s","space":"+"},{"name":"Sojuoppa","link":"https://sojuoppa.tv/?s=%s","space":"+"}]},{"name":"Database","list":[{"name":"MyDramaList","link":"https://mydramalist.com/search?q=%s"}]}]},{"name":"Cartoon","list":[{"name":"Online","list":[{"name":"KimCartoon","link":"https://kimcartoon.to/AdvanceSearch?cartoonName=%s"},{"name":"WatchCartoonOnline","link":"https://watchcartoononline.bz/?s=%s"}]}]}]');
-; // CONCATENATED MODULE: ./src/raw-sources.json
+;// CONCATENATED MODULE: ./src/raw-sources.json
 const raw_sources_namespaceObject = JSON.parse('[{"name":"Anime","list":[{"name":"Torrent","list":[{"name":"Nyaa","link":"https://nyaa.si/?f=0&c=1_4&q=%s","space":"+"}]}]},{"name":"Asian Drama","list":[{"name":"Torrent","list":[{"name":"Nyaa","link":"https://nyaa.si/?f=0&c=4_4&q=%s","space":"+"}]},{"name":"DDL","list":[{"name":"J-Raws","link":"https://jraws.com/?s=%s","space":"+"}]}]}]');
-    // EXTERNAL MODULE: ./src/styles.css
-    var styles = __webpack_require__(447);
-    ; // CONCATENATED MODULE: ./src/index.js
-    const traktApiKey =
-      "ca8c07cc9f8e355913aecdd6e95cfc926ddd3b13e4908318ebb09c808e578d5f";
-    const tmdbApiKey = "35125a44b61ff884093230540dc1c7bc";
-    
-    // **Nuove Costanti per IMDb, Jellyseerr e Overseerr**
-    const omdbApiKey = "YOUR_OMDB_API_KEY"; // Sostituisci con la tua chiave OMDb API
-    const jellyseerrUrl = "http://your-jellyseerr-instance/api"; // Sostituisci con l'URL della tua istanza Jellyseerr
-    const jellyseerrApiKey = "YOUR_JELLYSEERR_API_KEY"; // Sostituisci con la tua chiave API di Jellyseerr
-    const overseerrUrl = "http://your-overseerr-instance/api"; // Sostituisci con l'URL della tua istanza Overseerr
-    const overseerrApiKey = "YOUR_OVERSEERR_API_KEY"; // Sostituisci con la tua chiave API di Overseerr
-    
-    const traktApiHeaders = {
-      "Content-Type": "application/json",
-      "trakt-api-version": "2",
-      "trakt-api-key": traktApiKey,
-    };
-    
-    class LocalInfo {
-      constructor() {
-        this.all = {};
-        this.year;
-        this.ita;
-        this.absolute;
-        this.hd;
-        this.fhd;
-        this.uhd;
-        this.language;
-        this.category;
-        this.source;
-        this.alias;
-        this.season;
-        this.episode;
-      }
-      
-      get() {
-        this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
-        if (this.all) {
-          this.year = this.all.year;
-          this.ita = this.all.ita;
-          this.absolute = this.all.absolute;
-          this.hd = this.all.hd;
-          this.fhd = this.all.fhd;
-          this.uhd = this.all.uhd;
-          this.language = this.all.language;
-          this.category = this.all.category;
-          this.source = this.all.source;
-          this.alias = this.all.alias;
-          this.season = this.all.season;
-          this.episode = this.all.episode;
-        }
-      }
-      
-      clear() {
-        this.all = {};
-        this.year = null;
-        this.ita = null;
-        this.absolute = null;
-        this.hd = null;
-        this.fhd = null;
-        this.uhd = null;
-        this.language = null;
-        this.category = null;
-        this.source = null;
-        this.alias = null;
-        this.season = null;
-        this.episode = null;
-      }
+// EXTERNAL MODULE: ./src/styles.css
+var styles = __webpack_require__(447);
+;// CONCATENATED MODULE: ./src/index.js
+const traktApiKey =
+  "ca8c07cc9f8e355913aecdd6e95cfc926ddd3b13e4908318ebb09c808e578d5f";
+const tmdbApiKey = "35125a44b61ff884093230540dc1c7bc";
+const traktApiHeaders = {
+  "Content-Type": "application/json",
+  "trakt-api-version": "2",
+  "trakt-api-key": traktApiKey,
+};
+class LocalInfo {
+  constructor() {
+    this.all = {};
+    this.year;
+    this.ita;
+    this.absolute;
+    this.ita;
+    this.hd;
+    this.fhd;
+    this.uhd;
+    this.language;
+    this.category;
+    this.source;
+    this.alias;
+    this.season;
+    this.episode;
+  }
+  
+  get() {
+    this.all = JSON.parse(localStorage.getItem(`awLocalInfo_${aw_data.id}`));
+    if (this.all) {
+      this.year = this.all.year;
+      this.ita = this.all.ita;
+      this.absolute = this.all.absolute;
+      this.hd = this.all.hd;
+      this.fhd = this.all.fhd;
+      this.uhd = this.all.uhd;
+      this.language = this.all.language;
+      this.category = this.all.category;
+      this.source = this.all.source;
+      this.alias = this.all.alias;
+      this.season = this.all.season;
+      this.episode = this.all.episode;
     }
-    
-    class CB {
-      constructor(type) {
-        this.type = type;
-        this.active;
-        this.disabled = false;
-        this.label = document.createElement("span");
-        this.label.textContent = upFL(type);
-        this.block = document.createElement("div");
-        this.block.classList.add("aw-search-cb", "aw-unselectable");
-        this.block.id = `aw-${type}`;
-        this.block.tabIndex = '0';
-        this.block.append(this.label);
-        this.block.addEventListener("click", () => {
-          if (!this.disabled) {
-            this.active = !this.active;
-            this.setStyles();
-            updater();
-          }
-        });
-        this.block.addEventListener("keydown", (e) => {
-          if (!this.disabled && e.key == "Enter") {
-            this.active = !this.active;
-            this.setStyles();
-            updater();
-          }
-        });
-      }
-      
-      setStyles() {
-        if (this.active) {
-          this.block.style.background = '#b110109e';
-          this.label.style.opacity = '.8';
-        } else {
-          this.block.style.background = '#333333';
-          this.label.style.opacity = '.5';
-        }
-        if (this.disabled) {
-          this.block.style.opacity = '.2';
-          this.block.style.cursor = 'default';
-        } else {
-          this.block.style.opacity = '1';
-          this.block.style.cursor = 'pointer';
-        }
-      }
-      
-      init(type, root) {
-        root[type](this.block);
-        this.active = localInfo[this.type] === "true" ? true : false;
+  }
+  
+  clear() {
+    this.all = {};
+    this.year = null;
+    this.ita = null;
+    this.absolute = null;
+    this.hd = null;
+    this.fhd = null;
+    this.uhd = null;
+    this.language = null;
+    this.category = null;
+    this.source = null;
+    this.alias = null;
+    this.season = null;
+    this.episode = null;
+  }
+}
+class CB {
+  constructor(type) {
+    this.type = type;
+    this.active;
+    this.disabled = false;
+    this.label = document.createElement("span");
+    this.label.textContent = upFL(type);
+    this.block = document.createElement("div");
+    this.block.classList.add("aw-search-cb", "aw-unselectable");
+    this.block.id = `aw-${type}`;
+    this.block.tabIndex = '0';
+    this.block.append(this.label);
+    this.block.addEventListener("click", () => {
+      if (!this.disabled) {
+        this.active = !this.active;
         this.setStyles();
-      }
-    }
-    
-    class LB {
-      constructor(type) {
-        this.type = type;
-        this.searchOption = document.createElement("div");
-        this.label = document.createElement("div");
-        this.title = document.createElement("div");
-        this.select = document.createElement("div");
-        this.searchOption.tabIndex = "0";
-        this.searchOption.id = "aw-" + this.type;
-        this.searchOption.classList.add("aw-search-option", "aw-unselectable");
-        this.title.classList.add("aw-title");
-        this.title.innerHTML = `<span></span><span class="caret"></span>`;
-        this.label.classList.add("aw-label", "aw-unselectable");
-        this.label.textContent = upFL(this.type) + ":";
-        this.select.classList.add("aw-select", "aw-hidden");
-        this.searchOption.append(this.title, this.select);
-        document.addEventListener("click", (e) => {
-          this.#toggleList(e);
-        });
-        document.addEventListener("keydown", (e) => {
-          e.key == "Enter" && this.#toggleList(e);
-        });
-      }
-      
-      #toggleList(event) {
-        if (
-          !this.searchOption.contains(event.target) ||
-          !this.searchOption
-            .querySelector(".aw-select")
-            .classList.contains("aw-hidden")
-        ) {
-          this.searchOption.querySelector(".aw-select").classList.add("aw-hidden");
-          setTimeout(() => {
-            this.searchOption.querySelector(".aw-title").style.borderRadius = "3px";
-          }, 100);
-        } else {
-          this.searchOption
-            .querySelector(".aw-select")
-            .classList.remove("aw-hidden");
-          setTimeout(() => {
-            this.searchOption.querySelector(".aw-title").style.borderRadius =
-              "3px 3px 0 0";
-          }, 100);
-          setTimeout(() => {
-            this.getOptions().forEach((option) => {
-              if (option.textContent == this.getTitle()) {
-                option.focus({ focusVisible: true });
-              }
-            });
-          }, 200);
-        }
-      }
-      
-      #selectOption(option) {
-        this.setTitle(option);
-        this.title.focus();
         updater();
       }
-      
-      #optionCreate(option) {
-        let optionBlock = document.createElement("div");
-        optionBlock.tabIndex = "0";
-        optionBlock.textContent = option;
-        optionBlock.classList.add("aw-option", "aw-unselectable");
-        this.select.append(optionBlock);
-        this.localInfo &&
-          option == this.localInfo[this.type] &&
-          (this.title.textContent = option);
-        optionBlock.onclick = () => {
-          this.#selectOption(option);
-        };
-        optionBlock.onkeydown = (e) => {
-          if (e.key == "Enter") {
-            this.#selectOption(option);
-          }
-        };
-      }
-      
-      setTitle(text) {
-        this.title.querySelector("span").textContent = text;
-      }
-      
-      getTitle() {
-        return this.title.querySelector("span").textContent;
-      }
-      
-      init(root, initial) {
-        if (!root.contains(this.label)) {
-          localInfo[this.type] && this.setTitle(localInfo[this.type]);
-          initial && this.setTitle(initial);
-          root.append(this.label, this.searchOption);
-        }
-      }
-      
-      remove() {
-        this.label.remove();
-        this.searchOption.remove();
-      }
-      
-      update(items) {
-        for (let item of items) {
-          this.#optionCreate(item);
-        }
-        if (this.title.querySelector("span").textContent == "") {
-          this.setTitle(items[0]);
-        }
-      }
-      
-      getOptions() {
-        return this.searchOption.querySelectorAll(".aw-option");
-      }
-      
-      isExist(root) {
-        return root.contains(this.searchOption);
-      }
-      
-      clear(onlyOptions = false) {
-        if (!onlyOptions) this.setTitle("");
-        this.getOptions().forEach((option) => {
-          option.remove();
-        });
-      }
-    }
-    
-    const sourcesList = [
-      {
-        name: "Italiano",
-        list: italian_sources_namespaceObject,
-      },
-      {
-        name: "English",
-        list: english_sources_namespaceObject,
-      },
-      {
-        name: "Raw",
-        list: raw_sources_namespaceObject,
-      },
-    ];
-    
-    const sourcesLanguages = [];
-    const sourcesCategories = [];
-    const sourcesTypes = [];
-    sourcesList.forEach((item) => {
-      sourcesLanguages.push(item.name);
-      item.list.forEach((item1) => {
-        if (!sourcesCategories.includes(item1.name)) {
-          sourcesCategories.push(item1.name);
-        }
-        item1.list.forEach(
-          (item2) =>
-            !sourcesTypes.includes(item2.name) && sourcesTypes.push(item2.name)
-        );
-      });
     });
-    
-    const playItems = [
-      {
-        link: '[itemtype="http://schema.org/TVSeries"]',
-        id: "data-show-id",
-        type: "shows",
-      },
-      {
-        link: '[itemtype="http://schema.org/TVEpisode"]',
-        id: "data-show-id",
-        type: "shows",
-      },
-      {
-        link: '[itemtype="http://schema.org/TVSeason"]',
-        id: "data-show-id",
-        type: "shows",
-      },
-      {
-        link: '[itemtype="http://schema.org/Movie"]',
-        id: "data-movie-id",
-        type: "movies",
-      },
-      {
-        link: ".schedule-episode",
-        id: "data-show-id",
-        type: "shows",
-      },
-    ];
-    
-    const aw_data = {
-      id: "",
-      tmdb: "",
-      type: "",
-      title: "",
-      year: "",
-      season: "",
-      episode: "",
-      abs_episode: "",
-      seasons: [],
-      imdb_id: "", // Nuova proprietà per IMDb ID
+    this.block.addEventListener("keydown", (e) => {
+      if (!this.disabled && e.key == "Enter") {
+        this.active = !this.active;
+        this.setStyles();
+        updater();
+      }
+    });
+  }
+  
+  setStyles() {
+    if (this.active) {
+      this.block.style.background = '#b110109e'
+      this.label.style.opacity = '.8'
+    } else {
+      this.block.style.background = '#333333';
+      this.label.style.opacity = '.5'
     };
-    
-    const localInfo = new LocalInfo();
-    
-    // Inizializzazione Checkbox e Listbox
-    const yearCB = new CB("anno");
-    const itaCB = new CB("ITA");
-    const absoluteCB = new CB("assoluto");
-    const hdCB = new CB("720p");
-    const fhdCB = new CB("1080p");
-    const uhdCB = new CB("2160p");
-    const languageLB = new LB("lingua");
-    const categoryLB = new LB("categora");
-    const sourceLB = new LB("sorgente");
-    const aliasLB = new LB("alias");
-    const seasonLB = new LB("stagione");
-    const episodeLB = new LB("episodio");
-    
-    document.addEventListener("DOMContentLoaded", () => {
-      const style = document.createElement('style');
-      style.textContent = styles/* default */.Z;
-      document.head.appendChild(style);
-      
-      for (let element of playItems) {
-        awButtons(element);
-      }
+    if (this.disabled) {
+      this.block.style.opacity = '.2';
+      this.block.style.cursor = 'default';
+    } else {
+      this.block.style.opacity = '1';
+      this.block.style.cursor = 'pointer';
+    };
+  }
+  init(type, root) {
+    root[type](this.block);
+    this.active = localInfo[this.type] == "true" ? true : false;
+    this.setStyles();
+  }
+}
+class LB {
+  constructor(type) {
+    (this.type = type), (this.searchOption = document.createElement("div"));
+    this.label = document.createElement("div");
+    this.title = document.createElement("div");
+    this.select = document.createElement("div");
+    this.searchOption.tabIndex = "0";
+    this.searchOption.id = "aw-" + this.type;
+    this.searchOption.classList.add("aw-search-option", "aw-unselectable");
+    this.title.classList.add("aw-title");
+    this.title.innerHTML = `<span></span><span class="caret"></span>`;
+    this.label.classList.add("aw-label", "aw-unselectable");
+    this.label.textContent = upFL(this.type) + ":";
+    this.select.classList.add("aw-select", "aw-hidden");
+    this.searchOption.append(this.title, this.select);
+    document.addEventListener("click", (e) => {
+      this.#toggleList(e);
     });
-      
-    // Gestore di eventi per il bottone 720p
-    hdCB.block.addEventListener("click", () => {
-      if (!hdCB.disabled) {
-        fhdCB.active = false;
-        uhdCB.active = false;
-        // Aggiorna gli stili per riflettere lo stato attivo/disattivo
-        fhdCB.setStyles();
-        uhdCB.setStyles();
-        updater();
-      }
+    document.addEventListener("keydown", (e) => {
+      e.key == "Enter" && this.#toggleList(e);
     });
-    // Gestore di eventi per il bottone 1080p
-    fhdCB.block.addEventListener("click", () => {
-      if (!fhdCB.disabled) {
-        hdCB.active = false;
-        uhdCB.active = false;
-        // Aggiorna gli stili
-        hdCB.setStyles();
-        uhdCB.setStyles();
-        updater();
-      }
+  }
+  #toggleList(event) {
+    if (
+      !this.searchOption.contains(event.target) ||
+      !this.searchOption
+        .querySelector(".aw-select")
+        .classList.contains("aw-hidden")
+    ) {
+      this.searchOption.querySelector(".aw-select").classList.add("aw-hidden");
+      setTimeout(() => {
+        this.searchOption.querySelector(".aw-title").style.borderRadius = "3px";
+      }, 100);
+    } else {
+      this.searchOption
+        .querySelector(".aw-select")
+        .classList.remove("aw-hidden");
+      setTimeout(() => {
+        this.searchOption.querySelector(".aw-title").style.borderRadius =
+          "3px 3px 0 0";
+      }, 100);
+      setTimeout(() => {
+        this.getOptions().forEach((option) => {
+          if (option.textContent == this.getTitle()) {
+            option.focus({ focusVisible: true });
+          }
+        });
+      }, 200);
+    }
+  }
+  #selectOption(option) {
+    this.setTitle(option);
+    this.title.focus();
+    updater();
+  }
+  #optionCreate(option) {
+    let optionBlock = document.createElement("div");
+    optionBlock.tabIndex = "0";
+    optionBlock.textContent = option;
+    optionBlock.classList.add("aw-option", "aw-unselectable");
+    this.select.append(optionBlock);
+    this.localInfo &&
+      option == this.localInfo[this.type] &&
+      (this.title.textContent = option);
+    optionBlock.onclick = () => {
+      this.#selectOption(option);
+    };
+    optionBlock.onkeydown = (e) => {
+      e.key == "Enter" && this.#selectOption(option);
+    };
+  }
+  setTitle(text) {
+    this.title.querySelector("span").textContent = text;
+  }
+  getTitle() {
+    return this.title.querySelector("span").textContent;
+  }
+  init(root, initial) {
+    if (!root.contains(this.label)) {
+      localInfo[this.type] && this.setTitle(localInfo[this.type]);
+      initial && this.setTitle(initial);
+      root.append(this.label, this.searchOption);
+    }
+  }
+  remove() {
+    this.label.remove();
+    this.searchOption.remove();
+  }
+  update(items) {
+    for (let item of items) {
+      this.#optionCreate(item);
+    }
+    if (this.title.querySelector("span").textContent == "") {
+      this.setTitle(items[0]);
+    }
+  }
+  getOptions() {
+    return this.searchOption.querySelectorAll(".aw-option");
+  }
+  isExist(root) {
+    return root.contains(this.searchOption);
+  }
+  clear(onlyOptions = false) {
+    !onlyOptions && this.setTitle("");
+    this.getOptions().forEach((option) => {
+      option.remove();
     });
-    // Gestore di eventi per il bottone 2160p
-    uhdCB.block.addEventListener("click", () => {
-      if (!uhdCB.disabled) {
-        hdCB.active = false;
-        fhdCB.active = false;
-        // Aggiorna gli stili
-        hdCB.setStyles();
-        fhdCB.setStyles();
-        updater();
-      }
-    });
-    //Functions
-      
-    function updater() {
-      const searchString = document.querySelector(".aw-search-string");
-      const searchOptions = document.querySelector(".aw-search-options");
-      let selectedLanguage = languageLB.getTitle();
-      let selectedCategory = categoryLB.getTitle();
-      let selectedSource = sourceLB.getTitle();
-      let selectedAlias = aliasLB.getTitle();
-      let selectedSeason;
-      let selectedEpisode;
-      
-      const changeSearchString = () => {
-        const episodeInfo = () => {
-          if (selectedSeason != "None") {
-            if (selectedEpisode != "None") {
-              if (absoluteCB.active) {
-                return " " + selectedEpisode;
-              } else {
-                return ` s${selectedSeason}e${selectedEpisode}`;
-              }
-            } else {
-              return " s" + selectedSeason;
-            }
+  }
+}
+const sourcesList = [
+  {
+    name: "Italiano",
+    list: italian_sources_namespaceObject,
+  },
+  {
+    name: "English",
+    list: english_sources_namespaceObject,
+  },
+  {
+    name: "Raw",
+    list: raw_sources_namespaceObject,
+  },
+];
+const sourcesLanguages = [];
+const sourcesCategories = [];
+const sourcesTypes = [];
+sourcesList.forEach((item) => {
+  sourcesLanguages.push(item.name);
+  item.list.forEach((item1) => {
+    !sourcesCategories.includes(item1.name) &&
+      sourcesCategories.push(item1.name);
+    item1.list.forEach(
+      (item2) =>
+        !sourcesTypes.includes(item2.name) && sourcesTypes.push(item2.name)
+    );
+  });
+});
+const playItems = [
+  {
+    link: '[itemtype="http://schema.org/TVSeries"]',
+    id: "data-show-id",
+    type: "shows",
+  },
+  {
+    link: '[itemtype="http://schema.org/TVEpisode"]',
+    id: "data-show-id",
+    type: "shows",
+  },
+  {
+    link: '[itemtype="http://schema.org/TVSeason"]',
+    id: "data-show-id",
+    type: "shows",
+  },
+  {
+    link: '[itemtype="http://schema.org/Movie"]',
+    id: "data-movie-id",
+    type: "movies",
+  },
+  {
+    link: ".schedule-episode",
+    id: "data-show-id",
+    type: "shows",
+  },
+];
+const aw_data = {
+  id: "",
+  tmdb: "",
+  type: "",
+  title: "",
+  year: "",
+  season: "",
+  episode: "",
+  abs_episode: "",
+  seasons: [],
+};
+const localInfo = new LocalInfo();
+const yearCB = new CB("anno");
+const itaCB = new CB("ITA");
+const absoluteCB = new CB("assoluto");
+const hdCB = new CB("720p");
+const fhdCB = new CB("1080p");
+const uhdCB = new CB("2160p");
+const languageLB = new LB("lingua");
+const categoryLB = new LB("categora");
+const sourceLB = new LB("sorgente");
+const aliasLB = new LB("alias");
+const seasonLB = new LB("stagione");
+const episodeLB = new LB("episodio");
+document.addEventListener("DOMContentLoaded", () => {
+  const style = document.createElement('style');
+  style.textContent = styles/* default */.Z;
+  document.head.appendChild(style);
+  
+  for (let element of playItems) {
+    awButtons(element);
+  }
+});
+  
+// Gestore di eventi per il bottone 720p
+hdCB.block.addEventListener("click", () => {
+  if (!hdCB.disabled) {
+    fhdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili per riflettere lo stato attivo/disattivo
+    fhdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+// Gestore di eventi per il bottone 1080p
+fhdCB.block.addEventListener("click", () => {
+  if (!fhdCB.disabled) {
+    hdCB.active = false;
+    uhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    uhdCB.setStyles();
+    updater();
+  }
+});
+// Gestore di eventi per il bottone 2160p
+uhdCB.block.addEventListener("click", () => {
+  if (!uhdCB.disabled) {
+    hdCB.active = false;
+    fhdCB.active = false;
+    // Aggiorna gli stili
+    hdCB.setStyles();
+    fhdCB.setStyles();
+    updater();
+  }
+});
+//Functions
+  
+function updater() {
+  const searchString = document.querySelector(".aw-search-string");
+  const searchOptions = document.querySelector(".aw-search-options");
+  let selectedLanguage = languageLB.title.querySelector("span").textContent;
+  let selectedCategory = categoryLB.title.querySelector("span").textContent;
+  let selectedSource = sourceLB.title.querySelector("span").textContent;
+  let selectedAlias = aliasLB.title.querySelector("span").textContent;
+  let selectedSeason;
+  let selectedEpisode;
+  const changeSearchString = () => {
+    const episodeInfo = () => {
+      if (selectedSeason != "None") {
+        if (selectedEpisode != "None") {
+          if (absoluteCB.active) {
+            return " " + selectedEpisode;
           } else {
-            return "";
+            return ` s${selectedSeason}e${selectedEpisode}`;
           }
-        };
-        searchString.value =
-          (selectedAlias ? selectedAlias : aw_data.title) +
-          episodeInfo() +
-          (yearCB.active ? " " + aw_data.year : "") +
-          (itaCB.active ? " ITA" : "") +
-          (hdCB.active ? " 720p" : "") + 
-          (fhdCB.active ? " 1080p" : "") + 
-          (uhdCB.active ? " 2160p" : "");
-      };
-      
-      const optionsCheck = (title, options, checkArray) => {
-        for (let option of options) {
-          if (!checkArray.find((element) => element.name == option.textContent)) {
-            option.classList.add("aw-hidden");
-            if (title.textContent == option.textContent) {
-              title.textContent = option.parentElement.querySelector(
-                "div:not(.aw-hidden)"
-              ).textContent;
-            }
-          }
+        } else {
+          return " s" + selectedSeason;
         }
-      };
-      
-      if (["Torrent", "DDL"].includes(selectedSource) && aw_data.type == "shows") {
-        seasonLB.init("append", document.querySelector(".aw-search-cbs"));
-        selectedSeason = seasonLB.getTitle();
       } else {
-        seasonLB.remove();
-        selectedSeason = "None";
+        return "";
       }
-      
-      if (selectedSeason != "None" && seasonLB.isExist(document.querySelector(".aw-search-options"))) {
-        episodeLB.init("append", document.querySelector(".aw-search-cbs"));
-        selectedEpisode = episodeLB.getTitle();
-        fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}/seasons/${+selectedSeason}`, {
-          method: "GET",
-          headers: traktApiHeaders,
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            let episodes = [];
-            episodeLB.clear(true);
-            episodeLB.update(["None"]);
-            data.forEach((episode) => {
-              episodes.push(checkSepNum(episode.number));
-            });
-            episodeLB.update(episodes);
-            if (selectedEpisode !== "None" && !episodes.includes(selectedEpisode)) {
-              episodeLB.setTitle(episodes[0]);
-            }
-            selectedEpisode = episodeLB.getTitle();
-            changeSearchString();
-          });
-      } else {
-        episodeLB.remove();
-        selectedEpisode = "None";
-        changeSearchString();
-      }
-      
-      for (let option of document.querySelectorAll(".aw-option")) {
-        if (option.classList.contains("aw-hidden")) {
-          option.classList.remove("aw-hidden");
+    };
+    searchString.value =
+      (selectedAlias ? selectedAlias : aw_data.title) +
+      episodeInfo() +
+      (yearCB.active ? " " + aw_data.year : "") +
+      (itaCB.active ? " ITA" : "") +
+      (hdCB.active ? " 720p" : "") + 
+      (fhdCB.active ? " 1080p" : "") + 
+      (uhdCB.active ? " 2160p" : "");
+  };
+  const optionsCheck = (title, options, checkArray) => {
+    for (let option of options) {
+      if (!checkArray.find((element) => element.name == option.textContent)) {
+        option.classList.add("aw-hidden");
+        if (title.textContent == option.textContent) {
+          title.textContent = option.parentElement.querySelector(
+            "div:not(.aw-hidden)"
+          ).textContent;
         }
       }
-      
-      const selectedLanguageObj = sourcesList.find((element) => element.name == selectedLanguage);
-      const selectedCategoryObj = selectedLanguageObj.list.find((element) => element.name == selectedCategory);
-      const selectedSourceObj = selectedCategoryObj.list.find((element) => element.name == selectedSource);
-      
-      optionsCheck(
-        categoryLB.title.querySelector("span"),
-        categoryLB.getOptions(),
-        selectedLanguageObj.list
-      );
-      optionsCheck(
-        sourceLB.title.querySelector("span"),
-        sourceLB.getOptions(),
-        selectedCategoryObj.list
-      );
-      
-      addSites();
-      
-      absoluteCB.disabled = selectedEpisode == 'None';
-      absoluteCB.setStyles();
     }
-    
-    function awButtons(playobject) {
-      setInterval(function () {
-        let playNodes = document.querySelectorAll(playobject.link);
-        for (let node of playNodes) {
-          let attributes = [];
-          switch (playobject.link) {
-            case ".schedule-episode":
-              if (
-                node.parentElement.parentElement.parentElement
-                  .querySelector("h3")
-                  .textContent.split(" ")[0] == "Today"
-              ) {
-                if (!node.querySelector(".alternative-watch")) {
-                  attributes.push({
-                    name: "aw-data-id",
-                    value: node.getAttribute(playobject.id),
-                  });
-                  if (node.querySelector("h5 > a")) {
-                    let link = node.querySelector("h5 > a").href;
-                    attributes.push({
-                      name: "aw-data-type",
-                      value: playobject.type,
-                    });
-                    if (link.includes("/seasons")) {
-                      attributes.push({
-                        name: "aw-data-season",
-                        value: checkSepNum(link.split("/")[6]),
-                      });
-                    }
-                    if (link.includes("/episode")) {
-                      attributes.push({
-                        name: "aw-data-episode",
-                        value: checkSepNum(link.split("/").pop()),
-                      });
-                    }
-                  } else {
-                    attributes.push({
-                      name: "aw-data-type",
-                      value: "movies",
-                    });
-                  }
-                  node.querySelector("h4").after(awBlock("schedule", attributes));
-                }
-              }
-              break;
-            default:
-              const actionButtons = node.querySelectorAll(".action-buttons");
-              const quickIcons = node.querySelectorAll(".quick-icons");
-              for (let button of actionButtons) {
-                if (
-                  !document
-                    .querySelector(".btn-watch-now")
-                    .parentElement.querySelector(".alternative-watch")
-                ) {
-                  let link = document.querySelector("meta[itemprop=url]").content;
-                  attributes.push({
-                    name: "aw-data-id",
-                    value: button
-                      .querySelector(".btn-collect")
-                      .getAttribute(playobject.id),
-                  });
-                  attributes.push({
-                    name: "aw-data-type",
-                    value: playobject.type,
-                  });
-                  if (link.includes("/seasons")) {
-                    attributes.push({
-                      name: "aw-data-season",
-                      value: checkSepNum(link.split("/")[6]),
-                    });
-                  }
-                  if (link.includes("/episodes")) {
-                    attributes.push({
-                      name: "aw-data-episode",
-                      value: checkSepNum(link.split("/").pop()),
-                    });
-                  }
-                  document
-                    .querySelector(".btn-watch-now")
-                    .parentNode.querySelector(".poster")
-                    .append(awBlock("action", attributes));
-                  document
-                    .querySelector(".mobile-poster")
-                    .querySelector(".poster")
-                    .append(awBlock("action-mobile", attributes));
-                }
-              }
-              for (let icon of quickIcons) {
-                if (!icon.parentElement.querySelector(".alternative-watch")) {
-                  let link =
-                    icon.parentElement.querySelector("meta[itemprop=url]").content;
-                  attributes.push({
-                    name: "aw-data-id",
-                    value: icon.parentElement.getAttribute(playobject.id),
-                  });
-                  attributes.push({
-                    name: "aw-data-type",
-                    value: playobject.type,
-                  });
-                  attributes.push({
-                    name: "aw-data-url",
-                    value: icon.querySelector(".watch-now").dataset.url,
-                  });
-                  if (link.includes("/seasons")) {
-                    attributes.push({
-                      name: "aw-data-season",
-                      value: checkSepNum(link.split("/")[6]),
-                    });
-                  }
-                  if (link.includes("/episodes")) {
-                    attributes.push({
-                      name: "aw-data-episode",
-                      value: checkSepNum(link.split("/").pop()),
-                    });
-                  }
-                  icon.parentNode
-                    .querySelector(".poster")
-                    ?.append(awBlock("quick", attributes, getComputedStyle(icon)));
-                  icon.parentNode
-                    .querySelector(".fanart")
-                    ?.append(awBlock("quick", attributes, getComputedStyle(icon)));
-                }
-              }
-          }
-        }
-      }, 500);
-    }
-    
-    function awBlock(type, attributes, styles) {
-      let block = document.createElement("button");
-      block.tabIndex = "0";
-      block.classList.add("aw-button");
-      block.classList.add("alternative-watch");
-      block.classList.add("alternative-watch-" + type);
-      block.innerHTML = `<div class="trakt-icon-play2-thick"></div>`;
-      block.style.backgroundColor = styles?.backgroundColor
-        ? styles.backgroundColor
-        : "#333";
-      for (let attribute of attributes) {
-        block.setAttribute(attribute.name, attribute.value);
+  };
+  if (["Torrent", "DDL"].includes(selectedSource) && aw_data.type == "shows") {
+    seasonLB.init(searchOptions, aw_data.season);
+    selectedSeason = seasonLB.title.querySelector("span").textContent;
+  } else {
+    seasonLB.remove();
+    selectedSeason = "None";
+  }
+  if (selectedSeason != "None" && seasonLB.isExist(searchOptions)) {
+    episodeLB.init(searchOptions, aw_data.episode);
+    selectedEpisode = episodeLB.title.querySelector("span").textContent;
+    fetch(
+      `https://api.trakt.tv/${aw_data.type}/${
+        aw_data.id
+      }/seasons/${+selectedSeason}`,
+      {
+        method: "GET",
+        headers: traktApiHeaders,
       }
-      block.onclick = (event) => {
-        event.preventDefault();
-        const closeModal = (modal) => {
-          localStorage.setItem(
-            `awLocalInfo_${aw_data.id}`,
-            JSON.stringify({
-              year: yearCB.active.toString(),
-              ita: itaCB.active.toString(),
-              absolute: absoluteCB.active.toString(),
-              hd: hdCB.active.toString(),
-              fhd: fhdCB.active.toString(),
-              uhd: uhdCB.active.toString(),
-              language: languageLB.getTitle(),
-              category: categoryLB.getTitle(),
-              source: sourceLB.getTitle(),
-              alias: aliasLB.getTitle(),
-              season: seasonLB.getTitle(),
-              episode: episodeLB.getTitle(),
-            })
-          );
-          modal.style.opacity = 0;
-          setTimeout(function () {
-            awModal.remove();
-            aw_data.title = "";
-            aw_data.abs_episode = "";
-            aw_data.seasons = [];
-            languageLB.clear();
-            categoryLB.clear();
-            sourceLB.clear();
-            aliasLB.clear();
-            seasonLB.clear();
-            episodeLB.clear();
-            localInfo.clear();
-          }, 500);
-          block.focus();
-        };
-        let awModal = document.createElement("div");
-        let awBlock = document.createElement("div");
-        let awContent = document.createElement("div");
-        let awHeader = document.createElement("div");
-        let awFooter = document.createElement("div");
-        awContent.tabIndex = "-1";
-        awModal.classList.add("aw-modal");
-        awBlock.classList.add("aw-block");
-        awBlock.classList.add("aw-hidden");
-        awContent.classList.add("aw-content");
-        awContent.classList.add("aw-alternative");
-        awHeader.classList.add("aw-header");
-        awHeader.classList.add("aw-hidden");
-        awFooter.classList.add("aw-footer");
-        awFooter.classList.add("aw-hidden");
-        awHeader.innerHTML = `
-          <input type="text" class="aw-search-string" tabindex="0"/>
-          <div class="aw-search-cbs"></div>
-          <div class="aw-search-options"></div>
-        `;
-        document.querySelector("body").append(awModal);
-        awModal.append(awBlock);
-        awBlock.append(awContent);
-        awContent.append(awHeader);
-        awContent.append(awFooter);
-        aw_data.id = block.getAttribute("aw-data-id");
-        aw_data.type = block.getAttribute("aw-data-type");
-        aw_data.season = block.getAttribute("aw-data-season");
-        aw_data.episode = block.getAttribute("aw-data-episode");
-        localInfo.get();
-    
-        yearCB.init("append", document.querySelector(".aw-search-cbs"));
-        itaCB.init("append", document.querySelector(".aw-search-cbs"));
-        absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
-        hdCB.init("append", document.querySelector(".aw-search-cbs"));
-        fhdCB.init("append", document.querySelector(".aw-search-cbs"));
-        uhdCB.init("append", document.querySelector(".aw-search-cbs"));
-        languageLB.init(document.querySelector(".aw-search-options"));
-        categoryLB.init(document.querySelector(".aw-search-options"));
-        sourceLB.init(document.querySelector(".aw-search-options"));
-        aliasLB.init(document.querySelector(".aw-search-options"));
-        languageLB.update(sourcesLanguages);
-        categoryLB.update(sourcesCategories);
-        sourceLB.update(sourcesTypes);
-        seasonLB.update(["None"]);
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        let episodes = [];
+        episodeLB.clear({ onlyOptions: true });
         episodeLB.update(["None"]);
-        updater();
-        
-        // **Aggiunta delle Sezioni per IMDb, Jellyseerr e Overseerr**
-        reqCall_Data(); // Chiamata ai dati principali
-        
-        // Sezione IMDb
-        let imdbSection = document.createElement("div");
-        imdbSection.classList.add("aw-section");
-        imdbSection.innerHTML = `<h3>IMDb Information</h3><div class="aw-imdb-data">Caricamento...</div>`;
-        awContent.append(imdbSection);
-        fetchIMDbData(aw_data.title, aw_data.year);
-        
-        // Sezione per Jellyseerr e Overseerr
-        let integrationSection = document.createElement("div");
-        integrationSection.classList.add("aw-section");
-        integrationSection.innerHTML = `
-          <h3>Integrazione Richieste</h3>
-          <button class="aw-button" id="jellyseerr-request">Richiedi su Jellyseerr</button>
-          <button class="aw-button" id="overseerr-request">Richiedi su Overseerr</button>
-        `;
-        awContent.append(integrationSection);
-        
-        // Gestione eventi per i bottoni di integrazione
-        document.getElementById("jellyseerr-request").addEventListener("click", () => {
-          requestJellyseerr(aw_data.title, aw_data.year);
+        data.forEach((episode) => {
+          episodes.push(checkSepNum(episode.number));
         });
-        document.getElementById("overseerr-request").addEventListener("click", () => {
-          requestOverseerr(aw_data.title, aw_data.year);
-        });
-        
-        awBlock.classList.remove("aw-hidden");
-        awHeader.classList.remove("aw-hidden");
-        awFooter.classList.remove("aw-hidden");
-        
-        document.addEventListener("click", (e) => {
-          if (e.target == awModal) {
-            closeModal(awModal);
+        episodeLB.update(episodes);
+        selectedEpisode != "None" &&
+          !episodes.includes(selectedEpisode) &&
+          episodeLB.setTitle(episodes[0]);
+        selectedEpisode = episodeLB.title.querySelector("span").textContent;
+        changeSearchString();
+      });
+  } else {
+    episodeLB.remove();
+    selectedEpisode = "None";
+    changeSearchString();
+  }
+  for (let option of document.querySelectorAll(".aw-option")) {
+    option.classList.contains("aw-hidden") &&
+      option.classList.remove("aw-hidden");
+  }
+  optionsCheck(
+    categoryLB.title.querySelector("span"),
+    categoryLB.getOptions(),
+    sourcesList.find((element) => element.name == selectedLanguage).list
+  );
+  optionsCheck(
+    sourceLB.title.querySelector("span"),
+    sourceLB.getOptions(),
+    sourcesList
+      .find((element) => element.name == selectedLanguage)
+      .list.find((element) => element.name == selectedCategory).list
+  );
+  addSites();
+    absoluteCB.disabled = selectedEpisode == 'None';
+  absoluteCB.setStyles();
+}
+function awButtons(playobject) {
+  setInterval(function () {
+    let playNodes = document.querySelectorAll(playobject.link);
+    for (let node of playNodes) {
+      let attributes = [];
+      switch (playobject.link) {
+        case ".schedule-episode":
+          if (
+            node.parentElement.parentElement.parentElement
+              .querySelector("h3")
+              .textContent.split(" ")[0] == "Today"
+          ) {
+            if (!node.querySelector(".alternative-watch")) {
+              attributes.push({
+                name: "aw-data-id",
+                value: node.getAttribute(playobject.id),
+              });
+              if (node.querySelector("h5 > a")) {
+                let link = node.querySelector("h5 > a").href;
+                attributes.push({
+                  name: "aw-data-type",
+                  value: playobject.type,
+                });
+                if (link.includes("/seasons")) {
+                  attributes.push({
+                    name: "aw-data-season",
+                    value: checkSepNum(link.split("/")[6]),
+                  });
+                }
+                if (link.includes("/episode")) {
+                  attributes.push({
+                    name: "aw-data-episode",
+                    value: checkSepNum(link.split("/").pop()),
+                  });
+                }
+              } else {
+                attributes.push({
+                  name: "aw-data-type",
+                  value: "movies",
+                });
+              }
+              node.querySelector("h4").after(awBlock("schedule", attributes));
+            }
           }
-        });
-        document.addEventListener("keydown", (e) => {
-          if (e.key == "Escape") {
-            closeModal(awModal);
+          break;
+        default:
+          const actionButtons = node.querySelectorAll(".action-buttons");
+          const quickIcons = node.querySelectorAll(".quick-icons");
+          for (let button of actionButtons) {
+            if (
+              !document
+                .querySelector(".btn-watch-now")
+                .parentElement.querySelector(".alternative-watch")
+            ) {
+              let link = document.querySelector("meta[itemprop=url]").content;
+              attributes.push({
+                name: "aw-data-id",
+                value: button
+                  .querySelector(".btn-collect")
+                  .getAttribute(playobject.id),
+              });
+              attributes.push({
+                name: "aw-data-type",
+                value: playobject.type,
+              });
+              if (link.includes("/seasons")) {
+                attributes.push({
+                  name: "aw-data-season",
+                  value: checkSepNum(link.split("/")[6]),
+                });
+              }
+              if (link.includes("/episodes")) {
+                attributes.push({
+                  name: "aw-data-episode",
+                  value: checkSepNum(link.split("/").pop()),
+                });
+              }
+              document
+                .querySelector(".btn-watch-now")
+                .parentNode.querySelector(".poster")
+                .append(awBlock("action", attributes));
+              document
+                .querySelector(".mobile-poster")
+                .querySelector(".poster")
+                .append(awBlock("action-mobile", attributes));
+            }
           }
-        });
-      };
-      return block;
-    }
-    
-    // Funzione per aggiungere i siti di download
-    function addSites() {
-      const awFooter = document.querySelector(".aw-footer");
-      const awSearchString = document.querySelector(".aw-search-string");
-      const selectedLanguage = languageLB.getTitle();
-      const selectedCategory = categoryLB.getTitle();
-      const selectedSource = sourceLB.getTitle();
-      awFooter.querySelector(".aw-sources")?.remove();
-      awFooter.innerHTML += `<div class="aw-sources"/>`;
-      const awSources = document.querySelector(".aw-sources");
-      const sources = sourcesList
-        .find((element) => element.name == selectedLanguage)
-        .list.find((element) => element.name == selectedCategory)
-        .list.find((element) => element.name == selectedSource).list;
-      for (let source of sources) {
-        let awLink = document.createElement("button");
-        let awSourceName = document.createElement("div");
-        awLink.classList.add("aw-link");
-        awLink.classList.add("aw-button");
-        awSourceName.classList.add("aw-source-name");
-        awLink.dataset.awSpace = source.space || "%20";
-        awLink.dataset.awSource = source.link;
-        awSourceName.textContent = source.name;
-        awLink.append(awSourceName);
-        awSources.append(awLink);
-      }
-      const awLinks = document.querySelectorAll(".aw-link");
-      for (let link of awLinks) {
-        link.onclick = () => {
-          window.open(
-            link.dataset.awSource.replace(
-              "%s",
-              encodeURIComponent(awSearchString.value).replace(
-                /%20/g,
-                link.dataset.awSpace
-              )
-            )
-          );
-        };
+          for (let icon of quickIcons) {
+            if (!icon.parentElement.querySelector(".alternative-watch")) {
+              let link =
+                icon.parentElement.querySelector("meta[itemprop=url]").content;
+              attributes.push({
+                name: "aw-data-id",
+                value: icon.parentElement.getAttribute(playobject.id),
+              });
+              attributes.push({
+                name: "aw-data-type",
+                value: playobject.type,
+              });
+              attributes.push({
+                name: "aw-data-url",
+                value: icon.querySelector(".watch-now").dataset.url,
+              });
+              if (link.includes("/seasons")) {
+                attributes.push({
+                  name: "aw-data-season",
+                  value: checkSepNum(link.split("/")[6]),
+                });
+              }
+              if (link.includes("/episodes")) {
+                attributes.push({
+                  name: "aw-data-episode",
+                  value: checkSepNum(link.split("/").pop()),
+                });
+              }
+              icon.parentNode
+                .querySelector(".poster")
+                ?.append(awBlock("quick", attributes, getComputedStyle(icon)));
+              icon.parentNode
+                .querySelector(".fanart")
+                ?.append(awBlock("quick", attributes, getComputedStyle(icon)));
+            }
+          }
       }
     }
-    
-    function checkSepNum(n) {
-      return (n < 10 ? "0" : "") + n;
-    }
-    
-    function upFL(s) {
-      return s.charAt(0).toUpperCase() + s.slice(1);
-    }
-    
-    // API Functions
-    
-    // Funzione per ottenere dati da Trakt e TMDB
-    async function reqCall_Data() {
-      const awContent = document.querySelector(".aw-content");
-      const awFooter = document.querySelector(".aw-footer");
-      const [traktInfoResponse, seasonInfoResponse] = await Promise.allSettled([
-        fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}`, {
+  }, 500);
+}
+function awBlock(type, attributes, styles) {
+  let block = document.createElement("button");
+  block.tabIndex = "0";
+  block.classList.add("aw-button");
+  block.classList.add("alternative-watch");
+  block.classList.add("alternative-watch-" + type);
+  block.innerHTML = `<div class="trakt-icon-play2-thick">`;
+  block.style.backgroundColor = styles?.backgroundColor
+    ? styles.backgroundColor
+    : "#333";
+  for (let attribute of attributes) {
+    block.setAttribute(attribute.name, attribute.value);
+  }
+  block.onclick = (event) => {
+    event.preventDefault();
+    const closeModal = (modal) => {
+      localStorage.setItem(
+        `awLocalInfo_${aw_data.id}`,
+        JSON.stringify({
+          year: yearCB.active.toString(),
+          ita: itaCB.active.toString(),
+          absolute: absoluteCB.active.toString(),
+          hd: hdCB.active.toString(),
+          fhd: fhdCB.active.toString(),
+          uhd: uhdCB.active.toString(),
+          language: languageLB.title.querySelector("span").textContent,
+          category: categoryLB.title.querySelector("span").textContent,
+          source: sourceLB.title.querySelector("span").textContent,
+          alias: aliasLB.title.querySelector("span").textContent,
+          season: seasonLB.title.querySelector("span").textContent,
+          episode: episodeLB.title.querySelector("span").textContent,
+        })
+      );
+      modal.style.opacity = 0;
+      setTimeout(function () {
+        awModal.remove();
+        aw_data.title = "";
+        aw_data.abs_episode = "";
+        aw_data.seasons = [];
+        languageLB.clear();
+        categoryLB.clear();
+        sourceLB.clear();
+        aliasLB.clear();
+        seasonLB.clear();
+        episodeLB.clear();
+        localInfo.clear();
+      }, 500);
+      block.focus();
+    };
+    let awModal = document.createElement("div");
+    let awBlock = document.createElement("div");
+    let awContent = document.createElement("div");
+    let awHeader = document.createElement("div");
+    let awFooter = document.createElement("div");
+    awContent.tabIndex = "-1";
+    awModal.classList.add("aw-modal");
+    awBlock.classList.add("aw-block");
+    awBlock.classList.add("aw-hidden");
+    awContent.classList.add("aw-content");
+    awContent.classList.add("aw-alternative");
+    awHeader.classList.add("aw-header");
+    awHeader.classList.add("aw-hidden");
+    awFooter.classList.add("aw-footer");
+    awFooter.classList.add("aw-hidden");
+    awHeader.innerHTML = `
+      <input type="text" class="aw-search-string" tabindex="0"/>
+      <div class="aw-search-cbs"></div>
+      <div class="aw-search-options"></div>
+    `;
+    document.querySelector("body").append(awModal);
+    awModal.append(awBlock);
+    awBlock.append(awContent);
+    awContent.append(awHeader);
+    awContent.append(awFooter);
+    aw_data.id = block.getAttribute("aw-data-id");
+    aw_data.type = block.getAttribute("aw-data-type");
+    aw_data.season = block.getAttribute("aw-data-season");
+    aw_data.episode = block.getAttribute("aw-data-episode");
+    localInfo.get();
+
+    yearCB.init("append", document.querySelector(".aw-search-cbs"));
+    itaCB.init("append", document.querySelector(".aw-search-cbs"));
+    absoluteCB.init("append", document.querySelector(".aw-search-cbs"));
+    hdCB.init("append", document.querySelector(".aw-search-cbs"));
+    fhdCB.init("append", document.querySelector(".aw-search-cbs"));
+    uhdCB.init("append", document.querySelector(".aw-search-cbs"));
+    languageLB.init(document.querySelector(".aw-search-options"));
+    categoryLB.init(document.querySelector(".aw-search-options"));
+    sourceLB.init(document.querySelector(".aw-search-options"));
+    aliasLB.init(document.querySelector(".aw-search-options"));
+    languageLB.update(sourcesLanguages);
+    categoryLB.update(sourcesCategories);
+    sourceLB.update(sourcesTypes);
+    seasonLB.update(["None"]);
+    episodeLB.update(["None"]);
+    updater();
+    reqCall_Data();
+    awBlock.classList.remove("aw-hidden");
+    awHeader.classList.remove("aw-hidden");
+    document.addEventListener("click", (e) => {
+      e.target == awModal && closeModal(awModal);
+    });
+    document.addEventListener("keydown", (e) => {
+      e.key == "Escape" && closeModal(awModal);
+    });
+  };
+  return block;
+}
+function addSites() {
+  const awFooter = document.querySelector(".aw-footer");
+  const awSearchString = document.querySelector(".aw-search-string");
+  const selectedLanguage = languageLB.title.querySelector("span").textContent;
+  const selectedCategory = categoryLB.title.querySelector("span").textContent;
+  const selectedSource = sourceLB.title.querySelector("span").textContent;
+  awFooter.querySelector(".aw-sources")?.remove();
+  awFooter.innerHTML += `<div class="aw-sources"/>`;
+  const awSources = document.querySelector(".aw-sources");
+  const sources = sourcesList
+    .find((element) => element.name == selectedLanguage)
+    .list.find((element) => element.name == selectedCategory)
+    .list.find((element) => element.name == selectedSource).list;
+  for (let source of sources) {
+    let awLink = document.createElement("button");
+    let awSourceName = document.createElement("div");
+    awLink.classList.add("aw-link");
+    awLink.classList.add("aw-button");
+    awSourceName.classList.add("aw-source-name");
+    awLink.dataset.awSpace = source.space || "%20";
+    awLink.dataset.awSource = source.link;
+    awSourceName.textContent = source.name;
+    awLink.append(awSourceName);
+    awSources.append(awLink);
+  }
+  const awLinks = document.querySelectorAll(".aw-link");
+  for (let link of awLinks) {
+    link.onclick = () => {
+      window.open(
+        link.dataset.awSource.replace(
+          "%s",
+          encodeURIComponent(awSearchString.value).replace(
+            /%20/g,
+            link.dataset.awSpace
+          )
+        )
+      );
+    };
+  }
+}
+function checkSepNum(n) {
+  return (n < 10 ? "0" : "") + n;
+}
+function upFL(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+//API Functions
+async function reqCall_Data() {
+  const awContent = document.querySelector(".aw-content");
+  const awFooter = document.querySelector(".aw-footer");
+  const [traktInfoResponse, seasonInfoResponse] = await Promise.allSettled([
+    fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}`, {
+      method: "GET",
+      headers: traktApiHeaders,
+    }),
+    aw_data.type == "shows" &&
+      fetch(
+        `https://api.trakt.tv/${aw_data.type}/${aw_data.id}/seasons?extended=full`,
+        {
           method: "GET",
           headers: traktApiHeaders,
-        }),
-        aw_data.type == "shows" &&
-          fetch(
-            `https://api.trakt.tv/${aw_data.type}/${aw_data.id}/seasons?extended=full`,
-            {
-              method: "GET",
-              headers: traktApiHeaders,
-            }
-          ),
-      ]);
-      const traktInfo =
-        traktInfoResponse.status == "fulfilled" &&
-        traktInfoResponse.value &&
-        (await traktInfoResponse.value.json());
-      const seasonInfo =
-        seasonInfoResponse.status == "fulfilled" &&
-        seasonInfoResponse.value &&
-        (await seasonInfoResponse.value.json());
-      if (aw_data.type == "shows" && seasonInfo) {
-        seasonInfo.forEach((season) => {
-          aw_data.seasons.push(checkSepNum(season.number));
-        });
-      }
-      aw_data.title = traktInfo.title;
-      aliasLB.update([aw_data.title]);
-      aw_data.year = traktInfo.year;
-      aw_data.tmdb = traktInfo.ids.tmdb;
-      reqCall_Aliases(aw_data.title);
-      if (aw_data.type == "shows" && seasonInfo) {
-        seasonLB.update(aw_data.seasons);
-      }
-      updater();
-      awFooter.classList.remove("aw-hidden");
-      awContent.focus();
-    }
-    
-    // Funzione per ottenere alias da Trakt e TMDB
-    async function reqCall_Aliases(title) {
-      let titles = [];
-      const [tmdbDataResponse, traktTitlesResponse, tmdbTitlesResponse] =
-        await Promise.allSettled([
-          fetch(
-            `https://api.themoviedb.org/3/${
-              aw_data.type == "shows" ? "tv" : "movie"
-            }/${aw_data.tmdb}?api_key=${tmdbApiKey}&language=it-IT`,
-            { method: "GET" }
-          ),
-          fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}/aliases`, {
-            method: "GET",
-            headers: traktApiHeaders,
-          }),
-          fetch(
-            `https://api.themoviedb.org/3/${
-              aw_data.type == "shows" ? "tv" : "movie"
-            }/${aw_data.tmdb}/alternative_titles?api_key=${tmdbApiKey}&language=it-IT`,
-            { method: "GET" }
-          ),
-        ]);
-      const tmdbData =
-        tmdbDataResponse.status == "fulfilled" &&
-        (await tmdbDataResponse.value.json());
-      const traktTitles =
-        traktTitlesResponse.status == "fulfilled" &&
-        (await traktTitlesResponse.value.json());
-      const tmdbTitles =
-        tmdbTitlesResponse.status == "fulfilled" &&
-        (await tmdbTitlesResponse.value.json());
-      tmdbData?.original_name && titles.push(tmdbData.original_title);
-      tmdbData?.original_title && titles.push(tmdbData.original_title);
-      traktTitles?.forEach((item) => titles.push(item.title));
-      tmdbTitles?.titles?.forEach((item) => titles.push(item.title));
-      tmdbTitles?.results?.forEach((item) => titles.push(item.title));
-      aliasLB.update(
-        [...new Set(titles)].filter((element) => element && element != title)
-      );
-    }
-    
-    // **Funzione per ottenere dati da IMDb tramite OMDb API**
-    async function fetchIMDbData(title, year) {
-      const imdbDataContainer = document.querySelector(".aw-imdb-data");
-      try {
-        const response = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&y=${year}&apikey=${omdbApiKey}`);
-        const data = await response.json();
-        if (data.Response === "True") {
-          aw_data.imdb_id = data.imdbID;
-          imdbDataContainer.innerHTML = `
-            <p><strong>Titolo:</strong> ${data.Title}</p>
-            <p><strong>Anno:</strong> ${data.Year}</p>
-            <p><strong>Genere:</strong> ${data.Genre}</p>
-            <p><strong>Regia:</strong> ${data.Director}</p>
-            <p><strong>Cast:</strong> ${data.Actors}</p>
-            <p><strong>Plot:</strong> ${data.Plot}</p>
-            <p><strong>IMDb:</strong> <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">Vai su IMDb</a></p>
-          `;
-        } else {
-          imdbDataContainer.textContent = "Nessun dato IMDb trovato.";
         }
-      } catch (error) {
-        imdbDataContainer.textContent = "Errore nel recupero dei dati IMDb.";
-        console.error("Errore IMDb:", error);
-      }
-    }
-    
-    // **Funzione per inviare richiesta a Jellyseerr**
-    async function requestJellyseerr(title, year) {
-      try {
-        const response = await fetch(`${jellyseerrUrl}/request`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Api-Key": jellyseerrApiKey,
-          },
-          body: JSON.stringify({
-            title: title,
-            year: year,
-            type: aw_data.type,
-          }),
-        });
-        const data = await response.json();
-        if (response.ok) {
-          alert(`Richiesta inviata a Jellyseerr: ${data.message}`);
-        } else {
-          alert(`Errore Jellyseerr: ${data.message}`);
-        }
-      } catch (error) {
-        alert("Errore nell'invio della richiesta a Jellyseerr.");
-        console.error("Errore Jellyseerr:", error);
-      }
-    }
-    
-    // **Funzione per inviare richiesta a Overseerr**
-    async function requestOverseerr(title, year) {
-      try {
-        const response = await fetch(`${overseerrUrl}/api/v1/request`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Api-Key": overseerrApiKey,
-          },
-          body: JSON.stringify({
-            title: title,
-            year: year,
-            type: aw_data.type,
-          }),
-        });
-        const data = await response.json();
-        if (response.ok) {
-          alert(`Richiesta inviata a Overseerr: ${data.message}`);
-        } else {
-          alert(`Errore Overseerr: ${data.message}`);
-        }
-      } catch (error) {
-        alert("Errore nell'invio della richiesta a Overseerr.");
-        console.error("Errore Overseerr:", error);
-      }
-    }
-    
-    })();
+      ),
+  ]);
+  const traktInfo =
+    traktInfoResponse.status == "fulfilled" &&
+    traktInfoResponse.value &&
+    (await traktInfoResponse.value.json());
+  const seasonInfo =
+    seasonInfoResponse.status == "fulfilled" &&
+    seasonInfoResponse.value &&
+    (await seasonInfoResponse.value.json());
+  aw_data.type == "shows" && seasonInfo?.forEach((season) => {
+    aw_data.seasons.push(checkSepNum(season.number));
+  });
+  aw_data.title = traktInfo.title;
+  aliasLB.update([aw_data.title]);
+  aw_data.year = traktInfo.year;
+  aw_data.tmdb = traktInfo.ids.tmdb;
+  reqCall_Aliases(aw_data.title);
+  aw_data.type == "shows" && seasonInfo && seasonLB.update(aw_data.seasons);
+  updater();
+  awFooter.classList.remove("aw-hidden");
+  awContent.focus();
+}
+async function reqCall_Aliases(title) {
+  let titles = [];
+  const [tmdbDataResponse, traktTitlesResponse, tmdbTitlesResponse] =
+    await Promise.allSettled([
+      fetch(
+        `https://api.themoviedb.org/3/${
+          aw_data.type == "shows" ? "tv" : "movie"
+        }/${aw_data.tmdb}?api_key=${tmdbApiKey}&language=it-IT`,
+        { method: "GET" }
+      ),
+      fetch(`https://api.trakt.tv/${aw_data.type}/${aw_data.id}/aliases`, {
+        method: "GET",
+        headers: traktApiHeaders,
+      }),
+      fetch(
+        `https://api.themoviedb.org/3/${
+          aw_data.type == "shows" ? "tv" : "movie"
+        }/${
+          aw_data.tmdb
+        }/alternative_titles?api_key=${tmdbApiKey}&language=it-IT`,
+        { method: "GET" }
+      ),
+    ]);
+  const tmdbData =
+    tmdbDataResponse.status == "fulfilled" &&
+    (await tmdbDataResponse.value.json());
+  const traktTitles =
+    traktTitlesResponse.status == "fulfilled" &&
+    (await traktTitlesResponse.value.json());
+  const tmdbTitles =
+    tmdbTitlesResponse.status == "fulfilled" &&
+    (await tmdbTitlesResponse.value.json());
+  tmdbData?.original_name && titles.push(tmdbData.original_title);
+  tmdbData?.original_title && titles.push(tmdbData.original_title);
+  traktTitles?.forEach((item) => titles.push(item.title));
+  tmdbTitles?.titles?.forEach((item) => titles.push(item.title));
+  tmdbTitles?.results?.forEach((item) => titles.push(item.title));
+  aliasLB.update(
+    [...new Set(titles)].filter((element) => element && element != title)
+  );
+}
+})();
 /******/ })()
 ;
